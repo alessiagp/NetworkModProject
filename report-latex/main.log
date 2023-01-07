@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.15)  5 JAN 2023 16:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.15)  7 JAN 2023 14:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -511,8 +511,7 @@ LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 8
 4.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-No file main.aux.
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
@@ -533,7 +532,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
 LaTeX Font Info:    ... okay on input line 84.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
 LaTeX Font Info:    ... okay on input line 84.
-(/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count306
 \scratchdimen=\dimen194
@@ -631,12 +630,14 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 84.
 LaTeX Info: Redefining \pageref on input line 84.
 LaTeX Info: Redefining \nameref on input line 84.
+ (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 8
 7.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1phv.fd
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -718,115 +719,46 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 87.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 87.
+(./main.toc)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
-<Figures//view.jpg, id=5, 493.3632pt x 274.626pt>
-File: Figures//view.jpg Graphic file (type jpg)
-<use Figures//view.jpg>
-Package pdftex.def Info: Figures//view.jpg  used on input line 108.
-(pdftex.def)             Requested size: 500.484pt x 278.59785pt.
-[1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
-
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 138.
-
-
-Package fancyhdr Warning: \headheight is too small (11.0pt): 
-(fancyhdr)                Make it at least 20.96901pt, for example:
-(fancyhdr)                \setlength{\headheight}{20.96901pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-9.96901pt}.
-
-[2 <./Figures//view.jpg>]
-<Figures//results.pdf, id=34, 421.575pt x 316.18124pt>
-File: Figures//results.pdf Graphic file (type pdf)
-<use Figures//results.pdf>
-Package pdftex.def Info: Figures//results.pdf  used on input line 140.
-(pdftex.def)             Requested size: 242.41745pt x 181.81728pt.
-
-
-LaTeX Warning: Reference `fig:results' on page 3 undefined on input line 145.
-
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-88.
-(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 200.
-
-
-Package fancyhdr Warning: \headheight is too small (11.0pt): 
-(fancyhdr)                Make it at least 20.96901pt, for example:
-(fancyhdr)                \setlength{\headheight}{20.96901pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-9.96901pt}.
-
-[3 <./Figures//results.pdf>]
-
-LaTeX Warning: Citation `Figueredo:2009dg' on page 4 undefined on input line 20
-8.
-
-
-LaTeX Warning: Citation `Smith:2012qr' on page 4 undefined on input line 208.
-
+ (./cl-leukemia.tex)
 No file main.bbl.
 
 AED: lastpage setting LastPage
-
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 220.
-
-
-Package fancyhdr Warning: \headheight is too small (11.0pt): 
-(fancyhdr)                Make it at least 20.96901pt, for example:
-(fancyhdr)                \setlength{\headheight}{20.96901pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-9.96901pt}.
-
-[4] (./main.aux)
-
-LaTeX Warning: There were undefined references.
+[1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
+]
+(./main.aux)
 
 Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  ACADE012C8DD2F91B638DCD19FBC7041;1285.
+(rerunfilecheck)             Before: 6E534951C603CDA6A6C124CD533430F4;882
+(rerunfilecheck)             After:  53A3C92CC7DE8AA5A2B30F87EE1A9CE5;842.
  ) 
 Here is how much of TeX's memory you used:
- 16889 strings out of 478268
- 274219 string characters out of 5846346
- 715632 words of memory out of 5000000
- 34494 multiletter control sequences out of 15000+600000
- 536597 words of font info for 319 fonts, out of 8000000 for 9000
+ 16631 strings out of 478268
+ 271260 string characters out of 5846346
+ 702925 words of memory out of 5000000
+ 34425 multiletter control sequences out of 15000+600000
+ 517917 words of font info for 197 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,12n,77p,1001b,414s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 70i,9n,77p,1001b,360s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
-xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
-ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2022
-/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-
-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2022/texmf-dist/f
-onts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/
-urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/
-utmr8a.pfb>
-Output written on main.pdf (4 pages, 686700 bytes).
+exlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/
+2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/te
+xmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2022/texmf-di
+st/fonts/type1/urw/times/utmr8a.pfb>
+Output written on main.pdf (1 page, 39049 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
- 26 named destinations out of 1000 (max. 500000)
- 102411 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 79 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 500000)
+ 84025 words of extra memory for PDF output out of 89155 (max. 10000000)
 
