@@ -23,9 +23,10 @@
 \documentclass[fleqn,10pt]{SelfArx} % Document font size and equations flushed left
 
 \usepackage[english]{babel} % Specify a different language here - english by default
-
 \usepackage{lipsum} % Required to insert dummy text. To be removed otherwise
-
+\usepackage{csquotes}
+\usepackage[sorting=none, style=nature]{biblatex}
+\bibliography{bibliography}
 %----------------------------------------------------------------------------------------
 %	COLUMNS
 %----------------------------------------------------------------------------------------
@@ -55,7 +56,7 @@
 	linkcolor=color1,
 	bookmarksopen=false,
 	pdftitle={Title},
-	pdfauthor={Author}
+	pdfauthor={Author},
 	}
 
 %----------------------------------------------------------------------------------------
@@ -85,7 +86,7 @@
 
 \maketitle % Output the title and abstract box
 
-\tableofcontents % Output the contents section
+%\tableofcontents % Output the contents section
 
 \thispagestyle{empty} % Removes page numbering from the first page
 
@@ -95,7 +96,7 @@
 
 \section{Introduction} % The \section*{} command stops section numbering
 
-\addcontentsline{toc}{section}{Introduction} % Adds this section to the table of contents
+%\addcontentsline{toc}{section}{Introduction} % Adds this section to the table of contents
 
 \subsection{Chronic Lymphocytic Leukemia}
 \input{cl-leukemia.tex}
@@ -113,15 +114,16 @@
 \phantomsection
 \section{Conclusions} % The \section*{} command stops section numbering
 
-\addcontentsline{toc}{section}{Conclusions} % Adds this section to the table of contents
+%\addcontentsline{toc}{section}{Conclusions} % Adds this section to the table of contents
 
 %----------------------------------------------------------------------------------------
 %	REFERENCE LIST
 %----------------------------------------------------------------------------------------
-
-\phantomsection
-\bibliographystyle{unsrt}
-\bibliography{bibliography.bib}
+\newpage
+%\phantomsection
+\printbibliography
+%\bibliographystyle{unsrt}
+%\bibliography{bibliography.bib}
 
 %----------------------------------------------------------------------------------------
 
