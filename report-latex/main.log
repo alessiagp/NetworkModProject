@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.15)  7 JAN 2023 16:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.15)  8 JAN 2023 19:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1007,29 +1007,32 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 88.
-(./cl-leukemia.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 1--103
-
- []
+(./cl-leukemia.tex) (./mat-meth.tex) [1{/usr/local/texlive/2022/texmf-var/fonts
+/map/pdftex/updmap/pdftex.map}
 
 
-Overfull \hbox (3.77016pt too wide) in paragraph at lines 127--127
+] (./results.tex)
+Overfull \hbox (3.77016pt too wide) in paragraph at lines 129--129
 \OT1/ptm/m/n/10 (-20) lym-pho-cytic leukaemia. \OT1/ptm/m/it/10 (-20) Im-muno-g
 enet-ics \OT1/ptm/b/n/10 (-20) 67, \OT1/ptm/m/n/10 (-20) 61{66 (2015). 
  []
 
 
 AED: lastpage setting LastPage
-[1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
+Package fancyhdr Warning: \headheight is too small (11.0pt): 
+(fancyhdr)                Make it at least 20.96901pt, for example:
+(fancyhdr)                \setlength{\headheight}{20.96901pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
 
-]
-(./main.aux)
+(fancyhdr)                \addtolength{\topmargin}{-9.96901pt}.
+
+[2] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D0ED6843ECE46E23B8F1D90EB5CE8FB2;641.
+(rerunfilecheck)             Checksum: AB99C69A62CF0BC0C2172A2EF817CDC8;717.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main
@@ -1040,24 +1043,28 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24292 strings out of 478268
- 425097 string characters out of 5846346
- 1271940 words of memory out of 5000000
- 41977 multiletter control sequences out of 15000+600000
- 522240 words of font info for 227 fonts, out of 8000000 for 9000
+ 24399 strings out of 478268
+ 426080 string characters out of 5846346
+ 1281940 words of memory out of 5000000
+ 41985 multiletter control sequences out of 15000+600000
+ 530105 words of font info for 285 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,9n,77p,1001b,1763s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 70i,11n,77p,1001b,1763s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/
-2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/te
-xmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2022/texmf-di
-st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
-ype1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/t
-imes/utmri8a.pfb>
-Output written on main.pdf (1 page, 63437 bytes).
+exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
+ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2022
+/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-
+dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2022/texmf-dist/f
+onts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
+/urw/times/utmbi8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/time
+s/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.
+pfb>
+Output written on main.pdf (2 pages, 107822 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
- 88105 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 109 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
+ 20 named destinations out of 1000 (max. 500000)
+ 92201 words of extra memory for PDF output out of 106986 (max. 10000000)
 
