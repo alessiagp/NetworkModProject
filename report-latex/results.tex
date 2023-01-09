@@ -8,4 +8,19 @@ At each time point, the percent change in frequency of A20 cells in each treated
 The difference between the average frequency in each test group and the Control group represents the percent growth inhibition as a function of treatment. Growth inhibition due to Cyt was dose dependent (low dose 9\%, high dose 58\%), whereas inhibition due to Ibr was not (low and high doses about 44\%).
 Based on previous studies and on the \textit{in vivo} experiments, an ODE model was formulated to explain the interaction between CLL cells and chemotherapeutic drugs
 
-% \[ \left\{ \begin{array}{lr} \frac{dA}{dt} = rA \left( 1 - \frac{A}{K} \right) - \mu_A AE - \frac{\mu_{AC} AC}{a+C} & (1) \\ & \\ \frac{dE}{dt} = -\mu_E E + \frac{pAE}{c+A} - \mu_{AE} AE - \frac{\mu_{EC} EC}{b+C} & (2) \\ & \\ \frac{dC}{dt} = \sum_{m=0}^{N-1} d\delta (t-m\tau) - \mu_CC - \frac{\mu_{CA} CA}{a+A} & (3) \end{array} \right. \]
+\[
+\begin{cases} 
+	\frac{dA}{dt} = rA \bigl( 1 - \frac{A}{K} \bigr) - \mu_A AE - \frac{\mu_{AC} AC}{a+C} & (1)\\
+	\frac{dE}{dt} = -\mu_E E + \frac{pAE}{c+A} - \mu_{AE} AE - \frac{\mu_{EC} EC}{b+C} & (2) \\
+	\frac{dC}{dt} = \sum_{m=0}^{N-1} d\delta (t-m\tau) - \mu_{C} - \frac{\mu_{CA} CA}{a+A} & (3) 
+\end{cases}
+\]
+
+$\frac{dA}{dt}$ describes the dynamic of A20 mCherry cells. The positive term corresponds to the logistic cancer growth characterized by the coefficient $r$ which is limited by the maximal tumor cell number $K$. 
+The negative terms correspond to A20 cells being killed by effector cells with rate $\mu_A$ and to the log-kill hypothesis, with a Michaelis–Menten drug saturation response $a + C$. $\mu_{AC}$ is the death rate resulting from the action of the drug on cancer cells.
+$\frac{dE}{dt}$ describes the dynamic of immune effector cells. $µ_{E}$ is the natural death rate of effector cells. $p$ is the production rate of effector cells stimulated by cancer cells. $c$ is the number of cancer cells by which the immune system response is half of its maximum. 
+$\mu_{EA}$ is the interaction coefficient between cancer and effector cells affecting immune populations. $\mu_{EC}$ is the mortality rate due to the action of chemotherapy on effector cells and $b$ is the drug amount for which such effect is half of its maximum.
+$\frac{dC}{dt}$ describes the first-order pharmacokinetics of a drug with an external source. A dose $d$ of the drug is injected every $\tau$ hours. By modeling the injection as a shifted Dirac Delta function $\delta (t − m\tau)$, the $m^{th}$ dose raises $C(t)$ by $d$ units at $t=m\tau$. $\mu_C$ is the deactivation rate calculated as $\mu_C = \frac{\ln 2}{t_{1/2}}$, where $t_{1/2}$ is the elimination half-life (1–3 h for Cyt and 4–6 h for Ibr). $\mu_{CA}$ is the rate at which drug molecules attack cancer cells. 
+$a$ represents the drug concentration producing 50\% of the maximum activity in the A20 mCherry cell population. A mathematical analysis of the model (1)–(3) found that the system is characterized by three fixed points, one of which is asymptotically stable.
+For the \textbf{parameters} to have biological meaning, they must be positive. The initial conditions at $t=0$ are the initial number of A20 cells $A(0) = 5 \times 10^4$ cells/mouse, the initial number of effector cells $E(0) = 2500$ cells/mouse and no drug before the treatment $C(0)=0$. The number of drug molecules is calculated using $\frac{mN_a}{M}$, where $m$ is the mass of the drug, $N_a$ is Avogadro's number and $M$ the molar mass of the drug.
+A \textbf{sensitivity analysis} determined the range of parameter $\mu_{AC}$ which has the most significant impact on cancer cells under the different treatments. To test the growth inhibitory effects of Cyt combined with Ibr, a simulation was ran that predicted 95\% of cell growth inhibition, which represents an 85\% increase in killing efficiency compared to separate treatment.

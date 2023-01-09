@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.15)  8 JAN 2023 19:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.15)  9 JAN 2023 10:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1011,7 +1011,41 @@ LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
 /map/pdftex/updmap/pdftex.map}
 
 
-] (./results.tex)
+] (./results.tex
+
+LaTeX Warning: Command \textmu invalid in math mode on input line 21.
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
+1.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+
+LaTeX Warning: Command \textmu invalid in math mode on input line 21.
+
+Missing character: There is no � in font zptmcm7t!
+
+! LaTeX Error: Unicode character − (U+2212)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...hifted Dirac Delta function $\delta (t −
+                                                   m\tau)$, the $m^{th}$ dos...
+
+? 
+)
+
+Package fancyhdr Warning: \headheight is too small (11.0pt): 
+(fancyhdr)                Make it at least 20.96901pt, for example:
+(fancyhdr)                \setlength{\headheight}{20.96901pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-9.96901pt}.
+
+[2]
 Overfull \hbox (3.77016pt too wide) in paragraph at lines 129--129
 \OT1/ptm/m/n/10 (-20) lym-pho-cytic leukaemia. \OT1/ptm/m/it/10 (-20) Im-muno-g
 enet-ics \OT1/ptm/b/n/10 (-20) 67, \OT1/ptm/m/n/10 (-20) 61{66 (2015). 
@@ -1027,7 +1061,9 @@ Package fancyhdr Warning: \headheight is too small (11.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-9.96901pt}.
 
-[2] (./main.aux)
+[3
+
+] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1043,28 +1079,30 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24399 strings out of 478268
- 426080 string characters out of 5846346
+ 24464 strings out of 478268
+ 426785 string characters out of 5846346
  1281940 words of memory out of 5000000
- 41985 multiletter control sequences out of 15000+600000
- 530105 words of font info for 285 fonts, out of 8000000 for 9000
+ 42009 multiletter control sequences out of 15000+600000
+ 537292 words of font info for 313 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,11n,77p,1001b,1763s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 70i,13n,77p,1001b,1763s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
-xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
-ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2022
-/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-
-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2022/texmf-dist/f
-onts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
-/urw/times/utmbi8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/time
-s/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.
-pfb>
-Output written on main.pdf (2 pages, 107822 bytes).
+exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
+ve/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2022/
+texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-d
+ist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2022/texmf-dist/fo
+nts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/u
+rw/symbol/usyr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/ut
+mb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb>
+</usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/loca
+l/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (3 pages, 129416 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
- 92201 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 129 PDF objects out of 1000 (max. 8388607)
+ 97 compressed objects within 1 object stream
+ 21 named destinations out of 1000 (max. 500000)
+ 94249 words of extra memory for PDF output out of 106986 (max. 10000000)
 
