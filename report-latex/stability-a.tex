@@ -1,0 +1,75 @@
+\subsubsection{Stability when $d=0$, \textit{i.e. without treatment}}
+The (1)-(3) model depends on time in the chemotherapy levels. Since equilibra cannot explicitly depend on $t$ for each $t\in \mathbf{R}$, we can approximate $\sum_{m=0}^{N-1} d\delta(t - m\tau)$ using a uniform drug injection that takes the form $\frac{d}{\tau}$. Only non-negative equilibria are considered and all initial conditions are assumed to be positive
+
+\[
+	\begin{cases}
+	0 = rA \bigl( 1 - \frac{A}{K} \bigr) - \mu_A AE - \frac{\mu_{AC} AC}{a+C} & (A1)\\ \\ 
+	0 = -\mu_E E + \frac{pAE}{c+A} - \mu_{AE} AE - \frac{\mu_{EC} EC}{b+C} & (A2) \\ \\
+	0 = \frac{d}{\tau} - \mu_CC - \frac{\mu_{CA} CA}{a+A} & (A3) 
+	\end{cases} 
+\]
+
+Wihout treatment ($d=0$) and if $C^* \neq 0$, we find, from eq (A3)
+
+\[
+	\frac{d}{\tau} - \mu_C C^* - \frac{\mu_{AC}C^* A}{a+A} = 0 \]
+\[- \mu_C C^* = \frac{\mu_{AC}C^* A}{a+A} \rightarrow -\mu_C = \frac{\mu_{CA} A}{a+A} \rightarrow\]
+\[\rightarrow -\mu_Ca - \mu_CA = \mu_{CA} A \rightarrow A^* = -\frac{\mu_{CA}}{\mu_C + \mu_{CA}} < 0\]
+Since we have assumed all parameters to be positive. Then, in there is no treatment $C^*=0$, which is pretty obvious, since $C$ is the amount of chemotherapic drug.\\
+Under this condition, (A1) becomes
+\[ rA \left( r - \frac{A}{K} \right) - \mu_A EA = 0 \rightarrow A \left( r - \frac{rA}{K} - \mu_A E \right) = 0 \]
+Which is certainly true for $A_0^*=0$. Under this conditon, we find from (A2) that $-\mu_E E = 0$ which means $E_0^*=0$.\\
+We find another fixed point by solving
+\[ r - \frac{rA^*}{K} - \mu_A E* = 0 \rightarrow A^* = \frac{rK-\mu_AE^*K}{r} \]
+in the condition of no treatment, (A2) reduces to
+
+\[ E\bigl( -\mu_E + \frac{pA}{c+A} - \mu_{EA} A \bigr) = 0 \]
+
+which is true for $E_1^*=0$. Substituting it into $A^*$ we get $A_1^* = \frac{rK - \mu_A 0 K}{r} = K$.\\
+Other fixed points can be found by solving
+\[ -\mu_E + \frac{pA^*}{c+A^*} - \mu_{EA} A^* = 0 \rightarrow {A^*}^2 \mu_{EA} + A^* (\mu_E + \mu_{EA}c - p) + \mu_Ec = 0 \]
+By substituting the values from Table 1 we get (for Cyt)
+
+\[ {(A^*)}^2 4\times 10^{-15} + A^* (4\times 10^{-5} + 4\times 10^{-15} \cdot 10^2 - 4\times 10^{-14}) + \]
+\[+ 4\times 10^{-5} \cdot 10^2 = 0 \rightarrow A^*_{2,3} < 0 \]
+which gives $A^*_2 \approx -100$ and $A^*_3 \approx -10^{-10}$ that have no meaning, biologically speaking. Thus, for $d=0$ we have only two equilibria: $Eq_0^* = \{ A^*=0, E^*=0, C^*=0\}$ and $Eq_1^* = \{ A^*=K, E^*=0, C^*=0\}$.\\
+
+To study the stability of the equilibria of system (A1)-(A3), we need to compute the eigenvalues $\lambda = [\lambda_1,\lambda_2,\lambda_3]$ of the Jacobian matrix $J$
+\[ \mathbf{J} = \begin{bmatrix} \frac{\partial A1}{\partial A} & \frac{\partial A1}{\partial E} & \frac{\partial A1}{\partial C} \\ \\
+\frac{\partial A2}{\partial A} & \frac{\partial A2}{\partial E} & \frac{\partial A2}{\partial C}\\ \\
+\frac{\partial A3}{\partial A} & \frac{\partial A3}{\partial E} & \frac{\partial A3}{\partial C} \end{bmatrix} \]
+
+For $Eq_0^*$ we obtain
+
+\[ J = \begin{pmatrix} r&0&0 \\ 0&-\mu_E&0 \\ 0&0&-\mu_C \end{pmatrix} \]
+
+that has eigenvalues $\lambda = [0.01,-4\times 10^{-5},-0.231]$ for Cyt and $\lambda = [0.01,-4\times 10^{-5},-0.116]$. For the equilibrium to be stable, all the (real parts) of the eigenvalues must be negative. So $Eq_0^*$ is NOT asymptotically stable.\\
+
+For $Eq_1^*$ we have
+
+\[ J = \begin{pmatrix} -r & -\mu_{AE}K & -\frac{\mu_{AC}K}{a} \\ 0 & -\mu_E + \frac{pK}{c+K} - \mu_{EA}K \\ 0&0& -\mu_C - \frac{\mu_{CA}K}{a+K} \end{pmatrix} \]
+
+which has eigenvalues $\lambda = [-0.01, -4\times 10^{-5}, -0.35]$. So $Eq_1^*$ is asymptotically stable.
+\subsubsection{Stability of periodic tumour-free solutions} 
+Eq. (A1) admits the solution $A^* = E^* = 0$ with chemotherapy dynamics satisfying
+
+\[ \frac{dC}{dt} = \sum_{m=0}^\infty \mathbf{d} \delta (t-m\tau) -\mu_C C \]
+
+The delta function allows the determine the dynamics between consecutive injections of the drug, \textit{i.e.} when the dirac delta vanishes
+\[ \frac{dC}{dt} = -\mu_C C, \quad \text{when} \ n\tau \leq t < (n+1)\tau  \]
+
+If we set the initial condition $C(0) = d$
+
+\[ C(t) = C(0) e^{-\mu_C t} = d e^{-\mu_C t}, \quad \text{when} \quad 0 \leq t < \tau \]
+\[C(t) = d e^{-\mu_C t} + \tau e^{-\mu_C \tau}, \quad \text{when} \quad \tau \leq t < 2\tau \] 
+\[\dots\]
+\[ C(t) = d e^{-\mu_C t} + n\tau e^{-\mu_C \tau}, \quad \text{when} \quad n\tau \leq t < (n+1)\tau \]
+
+In the limit of large $n$, $C(t)$ converges to a periodic cycle $\tilde{C}(t)$. The associated cancer-free state will be
+
+\[ \begin{cases}
+	A^* = E^* = 0 \\ 
+	\tilde{C}(t) =  d e^{-\mu_C t} + n\tau e^{-\mu_C \tau} 
+\end{cases} \]
+\subsubsection{Linearization around equilibria} 
+This method allows the study of local properties of a non-linear system of differential equations. Let $Eq = (A^*,E^*,C^*)$ be an equilibrium of (1)-(3). By defining $x_1 = A(t) - A^*, x_2 = E(t) - E^*$ and $x_3 = C(t) - C^*$ and then 
