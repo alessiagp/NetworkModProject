@@ -26,7 +26,7 @@
 \usepackage{lipsum} % Required to insert dummy text. To be removed otherwise
 \usepackage{csquotes}
 \usepackage[sorting=none, style=nature]{biblatex}
-\bibliography{bibliography}
+\bibliography{bibliography.bib}
 %----------------------------------------------------------------------------------------
 %	COLUMNS
 %----------------------------------------------------------------------------------------
@@ -115,13 +115,13 @@
 
 \phantomsection
 \section{Conclusions} % The \section*{} command stops section numbering
-
+\input{conclusions.tex}
 %\addcontentsline{toc}{section}{Conclusions} % Adds this section to the table of contents
 
 %----------------------------------------------------------------------------------------
 %	REFERENCE LIST
 %----------------------------------------------------------------------------------------
-\newpage
+%\newpage
 %\phantomsection
 \printbibliography
 %\bibliographystyle{unsrt}
