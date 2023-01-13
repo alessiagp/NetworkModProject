@@ -2354,11 +2354,17 @@
     <bcf:citekey order="3">cll-burger-med</bcf:citekey>
     <bcf:citekey order="3">cll-rozman-med</bcf:citekey>
     <bcf:citekey order="4">immunogl-med</bcf:citekey>
-    <bcf:citekey order="5">pers-med</bcf:citekey>
-    <bcf:citekey order="6">main-paper</bcf:citekey>
-    <bcf:citekey order="7">cll-burger-med</bcf:citekey>
-    <bcf:citekey order="8">cll-rozman-med</bcf:citekey>
-    <bcf:citekey order="9">immunogl-med</bcf:citekey>
+    <bcf:citekey order="5">ibr-1</bcf:citekey>
+    <bcf:citekey order="6">cyt-1</bcf:citekey>
+    <bcf:citekey order="6">cyt-2</bcf:citekey>
+    <bcf:citekey order="7">pers-med</bcf:citekey>
+    <bcf:citekey order="8">main-paper</bcf:citekey>
+    <bcf:citekey order="9">cll-burger-med</bcf:citekey>
+    <bcf:citekey order="10">cll-rozman-med</bcf:citekey>
+    <bcf:citekey order="11">immunogl-med</bcf:citekey>
+    <bcf:citekey order="12">ibr-1</bcf:citekey>
+    <bcf:citekey order="13">cyt-1</bcf:citekey>
+    <bcf:citekey order="14">cyt-2</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
