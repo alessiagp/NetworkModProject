@@ -1,20 +1,19 @@
-In the context of personalized medicine, the field of medicine aiming at developing tailored cures for each patient, quantitative analysis can be employed to investigate whether the duration of therapy could be reduced without increasing the risk of relapse, or to compare the efficacy of different protocols\cite{pers-med}.
-In this sense, there has been an increasing use of mathematical models to study the dynamics of blood cancers under the influence of small molecule drugs and/or immunotherapy.
+In the context of personalized medicine, quantitative analyses can be employed to investigate whether the duration of a therapy could be reduced without increasing the risk of relapse, or to compare the efficacy of different protocols \cite{pers-med}.
+To this end, there has been an increasing use of mathematical models to study the dynamics of blood cancers under the influence of small-molecule drugs and/or immunotherapy.
 Yet, current models have several important limitations: 
 \begin{enumerate}
 	\item They are built upon simulation data rather than real-life experiments.
 	\item They do not take into account the variability of tumor cell growth rate between patients.
-	\item They led to conflicting results between optimal drug doses determined by \textit{in vitro} vs. \textit{in vivo}.
+	\item They lead to conflicting results between optimal drug doses determined \textit{in vitro} vs. \textit{in vivo}.
 \end{enumerate}
 
-The study presented\cite{main-paper} is focused on chronic lymphocytic leukemia (CLL), the most common type of blood cancer in the Western world.
-It involves an accumulation of lymphocytes B in secondary lymphoid organs, spleen, peripheal blood, and bone marrow.\cite{cll-burger-med, cll-rozman-med}  There is no known cause for this disease even if it is suspected to have a genetic basis. Mutations in \textit{IGHV} (immunoglobulin heavy variable) genes are thought to help distinguishing different types of clinical behaviours of CLL\cite{immunogl-med}.\\
+Chronic lymphocytic leukemia (CLL), the most common type of blood cancer in adults in the Western world, involves the accumulation of lymphocytes B in secondary lymphoid organs, spleen, peripheal blood, and bone marrow. \cite{cll-burger-med, cll-rozman-med}  There is no known cause for this disease, but it is suspected to have a genetic component. Mutations in \textit{IGHV} (immunoglobulin heavy variable) genes distinguishing different types of clinical behaviours of CLL and are prognostic of patent outcome \cite{immunogl-med}.\\
 %Treatment of Chronic Lymphocytic Leukemia - Burger Jan A.
 %Chronic Lymphocytic Leukemia - Rozman et al
 %Immunoglobulin heavy variable (IGHV) genes and alleles - Xochelli et al 
-The paper aims to address two issues regarding CLL treatment: the introduction of small-molecule drugs such as the \textit{Bruton tyrosine kinase} BTK inhibitor \textit{Ibrutinib} (Ibr) and its derivatives has transformed CLL therapy and contributed to extend the overall survival of patients.
-Nonetheless, patients can develop drug resistance and suffer from toxic side effects, and the disease remains incurable. Therefore, improvements in mathematical models are needed to assist clinicians in the design of more effective treatment protocols.\\
-To build this model, the growth rate of murine A20 leukemic cells in immuno-competent Balb/c mice was determined. This allowed to formulate the logistic dynamic of these cancer cells. 
-Then, experiments were conducted \textit{in vivo} to compare the cytotoxicity of two drugs (the topoisomerase inhibitor \textit{Cytarabine} Cyt and Ibr) against leukemic cells. Doses were selected by reviewing the literature on the use of these drugs in \textit{in vivo} models. The results allowed to calculate the killing rate of A20 cells as a function of therapy. 
+The study presented here \cite{main-paper} aims at developing a mathematical model for the treatment of CLL with small-molecule drugs. The authors take into consideration the \textit{Bruton tyrosine kinase} BTK inhibitor \textit{Ibrutinib} (Ibr), whose introduction has transformed CLL therapy and contributed to extend the overall survival of patients.
+Nonetheless, patients can develop drug resistance and suffer from toxic side effects, and the disease remains incurable. Therefore, improvements in mathematical models are needed to assist clinicians in the design of more effective treatment protocols. In particular, the repurpousing of other chemiotherapic drugs, such as the DNA synthesis inhibitor \textit{Cytarabine} (Cyt) could complement the action of drugs already in use for the treatment of CLL, like the abovmentioned Ibr.\\
+To build a model of the disease and treatment of CLL, the growth rate of murine A20 leukemic cells in immuno-competent Balb/c mice was determined, allowing to formulate the logistic dynamic of these cancer cells. 
+Then, experiments were conducted \textit{in vivo} to compare the cytotoxicity against leukemic cells of different dosages of the two drugs Cyt and Ibr. Doses were selected by reviewing the literature on the use of these drugs in \textit{in vivo} models. The results were used to calculate the killing rate of A20 cells as a function of therapy. 
 Experimental data were compared with the simulation model to validate the latter’s applicability. Since this model is based on \textit{in vivo} experiments it is more relevant to real-life situations.
 
