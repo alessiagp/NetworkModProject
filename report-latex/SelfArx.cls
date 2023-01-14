@@ -36,7 +36,7 @@
 \RequirePackage{calc}
 \RequirePackage{amsmath, amsfonts, amssymb}
 \RequirePackage{graphicx}
-\graphicspath{{Figures/}{./}} % Specifies where to look for included images (trailing slash required)
+%\graphicspath{{./Figures/}} % Specifies where to look for included images (trailing slash required)
 \RequirePackage{xcolor}
 \RequirePackage{booktabs}
 \RequirePackage{lastpage} % Number of pages in the document

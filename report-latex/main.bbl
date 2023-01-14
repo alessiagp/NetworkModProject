@@ -49,6 +49,96 @@
       \field{pages}{161\bibrangedash 167}
       \range{pages}{7}
     \endentry
+    \entry{cll-burger-med}{article}{}
+      \name{author}{1}{}{%
+        {{hash=4c39e01f896b8500df39ef792c45d502}{%
+           family={A.},
+           familyi={A\bibinitperiod},
+           given={Burger\bibnamedelima Jan},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c39e01f896b8500df39ef792c45d502}
+      \strng{fullhash}{4c39e01f896b8500df39ef792c45d502}
+      \strng{bibnamehash}{4c39e01f896b8500df39ef792c45d502}
+      \strng{authorbibnamehash}{4c39e01f896b8500df39ef792c45d502}
+      \strng{authornamehash}{4c39e01f896b8500df39ef792c45d502}
+      \strng{authorfullhash}{4c39e01f896b8500df39ef792c45d502}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The New England Journal of Medicine}
+      \field{title}{Treatment of Chronic Lymphocytic Leukemia}
+      \field{volume}{\textbf{383}}
+      \field{year}{2020}
+      \field{pages}{460\bibrangedash 473}
+      \range{pages}{14}
+    \endentry
+    \entry{cll-rozman-med}{article}{}
+      \name{author}{2}{}{%
+        {{hash=81a2641c88fc5f0358862ab5046039b9}{%
+           family={Ciril},
+           familyi={C\bibinitperiod},
+           given={Rozman},
+           giveni={R\bibinitperiod}}}%
+        {{hash=396872e97aa2371efc040673a344be13}{%
+           family={Emilio},
+           familyi={E\bibinitperiod},
+           given={Montserrat},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{27206525532ed559240df6c502499e28}
+      \strng{fullhash}{27206525532ed559240df6c502499e28}
+      \strng{bibnamehash}{27206525532ed559240df6c502499e28}
+      \strng{authorbibnamehash}{27206525532ed559240df6c502499e28}
+      \strng{authornamehash}{27206525532ed559240df6c502499e28}
+      \strng{authorfullhash}{27206525532ed559240df6c502499e28}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The New England Journal of Medicine}
+      \field{title}{Chronic Lymphocytic Leukemia}
+      \field{volume}{\textbf{333}}
+      \field{year}{1995}
+      \field{pages}{1052\bibrangedash 1057}
+      \range{pages}{6}
+    \endentry
+    \entry{immunogl-med}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e4ba6359353589f4385bfad462840954}{%
+           family={A.},
+           familyi={A\bibinitperiod},
+           given={Xochelli},
+           giveni={X\bibinitperiod}}}%
+        {{hash=e707dcabe320276e3f1e2695f86ab225}{%
+           family={A.},
+           familyi={A\bibinitperiod},
+           given={Agathangelidis},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4d0827bce8ffa8ae455652c2a78e6d66}{%
+           family={I.},
+           familyi={I\bibinitperiod},
+           given={Kavakiotis},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{a17e3893afc2f4aca304bd2b3e5547f1}
+      \strng{fullhash}{e01dca022079407d98a09722ca8df77d}
+      \strng{bibnamehash}{e01dca022079407d98a09722ca8df77d}
+      \strng{authorbibnamehash}{e01dca022079407d98a09722ca8df77d}
+      \strng{authornamehash}{a17e3893afc2f4aca304bd2b3e5547f1}
+      \strng{authorfullhash}{e01dca022079407d98a09722ca8df77d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Immunogenetics}
+      \field{title}{Immunoglobulin heavy variable (IGHV) genes and alleles: new entities, new names and implications for research and prognostication in chronic lymphocytic leukaemia}
+      \field{volume}{\textbf{67}}
+      \field{year}{2015}
+      \field{pages}{61\bibrangedash 66}
+      \range{pages}{6}
+    \endentry
     \entry{main-paper}{article}{}
       \name{author}{6}{}{%
         {{hash=4a8cd4b479a05e907fcc1290b711ccb2}{%
@@ -88,8 +178,8 @@
       \strng{authorbibnamehash}{49823bf8a7f1c814287cf529e16921cf}
       \strng{authornamehash}{49823bf8a7f1c814287cf529e16921cf}
       \strng{authorfullhash}{37a46c2661e98bac88830f00a2ea484c}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Cells}
@@ -97,96 +187,6 @@
       \field{title}{Validation of a Mathematical Model Describing the Dynamics of Chemotherapy for Chronic Lymphocytic Leukemia In Vivo}
       \field{volume}{\textbf{11}}
       \field{year}{2022}
-    \endentry
-    \entry{cll-burger-med}{article}{}
-      \name{author}{1}{}{%
-        {{hash=4c39e01f896b8500df39ef792c45d502}{%
-           family={A.},
-           familyi={A\bibinitperiod},
-           given={Burger\bibnamedelima Jan},
-           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \strng{namehash}{4c39e01f896b8500df39ef792c45d502}
-      \strng{fullhash}{4c39e01f896b8500df39ef792c45d502}
-      \strng{bibnamehash}{4c39e01f896b8500df39ef792c45d502}
-      \strng{authorbibnamehash}{4c39e01f896b8500df39ef792c45d502}
-      \strng{authornamehash}{4c39e01f896b8500df39ef792c45d502}
-      \strng{authorfullhash}{4c39e01f896b8500df39ef792c45d502}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The New England Journal of Medicine}
-      \field{title}{Treatment of Chronic Lymphocytic Leukemia}
-      \field{volume}{\textbf{383}}
-      \field{year}{2020}
-      \field{pages}{460\bibrangedash 473}
-      \range{pages}{14}
-    \endentry
-    \entry{cll-rozman-med}{article}{}
-      \name{author}{2}{}{%
-        {{hash=81a2641c88fc5f0358862ab5046039b9}{%
-           family={Ciril},
-           familyi={C\bibinitperiod},
-           given={Rozman},
-           giveni={R\bibinitperiod}}}%
-        {{hash=396872e97aa2371efc040673a344be13}{%
-           family={Emilio},
-           familyi={E\bibinitperiod},
-           given={Montserrat},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{27206525532ed559240df6c502499e28}
-      \strng{fullhash}{27206525532ed559240df6c502499e28}
-      \strng{bibnamehash}{27206525532ed559240df6c502499e28}
-      \strng{authorbibnamehash}{27206525532ed559240df6c502499e28}
-      \strng{authornamehash}{27206525532ed559240df6c502499e28}
-      \strng{authorfullhash}{27206525532ed559240df6c502499e28}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The New England Journal of Medicine}
-      \field{title}{Chronic Lymphocytic Leukemia}
-      \field{volume}{\textbf{333}}
-      \field{year}{1995}
-      \field{pages}{1052\bibrangedash 1057}
-      \range{pages}{6}
-    \endentry
-    \entry{immunogl-med}{article}{}
-      \name{author}{3}{}{%
-        {{hash=e4ba6359353589f4385bfad462840954}{%
-           family={A.},
-           familyi={A\bibinitperiod},
-           given={Xochelli},
-           giveni={X\bibinitperiod}}}%
-        {{hash=e707dcabe320276e3f1e2695f86ab225}{%
-           family={A.},
-           familyi={A\bibinitperiod},
-           given={Agathangelidis},
-           giveni={A\bibinitperiod}}}%
-        {{hash=4d0827bce8ffa8ae455652c2a78e6d66}{%
-           family={I.},
-           familyi={I\bibinitperiod},
-           given={Kavakiotis},
-           giveni={K\bibinitperiod}}}%
-      }
-      \strng{namehash}{a17e3893afc2f4aca304bd2b3e5547f1}
-      \strng{fullhash}{e01dca022079407d98a09722ca8df77d}
-      \strng{bibnamehash}{e01dca022079407d98a09722ca8df77d}
-      \strng{authorbibnamehash}{e01dca022079407d98a09722ca8df77d}
-      \strng{authornamehash}{a17e3893afc2f4aca304bd2b3e5547f1}
-      \strng{authorfullhash}{e01dca022079407d98a09722ca8df77d}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Immunogenetics}
-      \field{title}{Immunoglobulin heavy variable (IGHV) genes and alleles: new entities, new names and implications for research and prognostication in chronic lymphocytic leukaemia}
-      \field{volume}{\textbf{67}}
-      \field{year}{2015}
-      \field{pages}{61\bibrangedash 66}
-      \range{pages}{6}
     \endentry
     \entry{ibr-1}{article}{}
       \name{author}{2}{}{%
