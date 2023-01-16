@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.15)  14 JAN 2023 14:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.15)  16 JAN 2023 12:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1007,13 +1007,13 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 89.
-(./cl-leukemia.tex
+(./section_files/cl-leukemia.tex
 Overfull \hbox (5.9638pt too wide) in paragraph at lines 10--19
 \OT1/ptm/m/n/10 (-20) growth rate of murine A20 leukemic cells in immuno-compet
 ent
  []
 
-) (./drugs.tex
+) (./section_files/drugs.tex
 <./Figures//Ibrutinib.png, id=67, 1927.2pt x 1400.23125pt>
 File: ./Figures//Ibrutinib.png Graphic file (type png)
 <use ./Figures//Ibrutinib.png>
@@ -1053,7 +1053,7 @@ File: ./Figures//Cytarabin.png Graphic file (type png)
 Package pdftex.def Info: ./Figures//Cytarabin.png  used on input line 27.
 (pdftex.def)             Requested size: 128.48752pt x 140.33246pt.
 )
-(./mat-meth.tex) (./results.tex
+(./section_files/mat-meth.tex) (./section_files/results.tex
 
 Package fancyhdr Warning: \headheight is too small (11.0pt): 
 (fancyhdr)                Make it at least 20.96901pt, for example:
@@ -1062,7 +1062,8 @@ Package fancyhdr Warning: \headheight is too small (11.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-9.96901pt}.
 
-[2 <./Figures//Ibrutinib.png> <./Figures//Cytarabin.png>]) (./stability-a.tex
+[2 <./Figures//Ibrutinib.png> <./Figures//Cytarabin.png>])
+(./section_files/stability-a.tex
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <9> not available
 (Font)              Font shape `OT1/phv/b/sl' tried instead on input line 1.
 
@@ -1111,7 +1112,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
-) (./conclusions.tex)
+) (./section_files/conclusions.tex)
 
 Package fancyhdr Warning: \headheight is too small (11.0pt): 
 (fancyhdr)                Make it at least 20.96901pt, for example:
@@ -1152,8 +1153,8 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24611 strings out of 478268
- 429271 string characters out of 5846346
+ 24612 strings out of 478268
+ 429659 string characters out of 5846346
  1289325 words of memory out of 5000000
  42071 multiletter control sequences out of 15000+600000
  545546 words of font info for 351 fonts, out of 8000000 for 9000
