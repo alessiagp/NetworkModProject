@@ -1,5 +1,7 @@
 \subsubsection{Stability when $d=0$, \textit{i.e. without treatment}}
-The (1)-(3) model depends on time in the chemotherapy levels. Since equilibra cannot explicitly depend on $t$ for each $t\in \mathbf{R}$, we can approximate $\sum_{m=0}^{N-1} d\delta(t - m\tau)$ using a uniform drug injection that takes the form $\frac{d}{\tau}$. Only non-negative equilibria are considered and all initial conditions are assumed to be positive
+The (1)-(3) model depends on time in the chemotherapy levels. Since equilibra cannot explicitly depend on $t$ for each $t\in \mathbf{R}$, we can approximate $\sum_{m=0}^{N-1} d\delta(t - m\tau)$ using a uniform drug injection that takes the form $\frac{d}{\tau}$. 
+The steady states are calculated by zeroing the gradient of the function, only non-negative equilibria are considered and all initial conditions are assumed to be positive.
+The absence of drug treatment has $d=0$ and $C^*=0$
 
 \[
 	\begin{cases}
@@ -9,30 +11,37 @@ The (1)-(3) model depends on time in the chemotherapy levels. Since equilibra ca
 	\end{cases} 
 \]
 
-Wihout treatment ($d=0$) and if $C^* \neq 0$, we find, from eq (A3)
-
+By applying the conditions for no treatment, the system becomes
 \[
-	\frac{d}{\tau} - \mu_C C^* - \frac{\mu_{AC}C^* A}{a+A} = 0 \]
-\[- \mu_C C^* = \frac{\mu_{AC}C^* A}{a+A} \rightarrow -\mu_C = \frac{\mu_{CA} A}{a+A} \rightarrow\]
-\[\rightarrow -\mu_Ca - \mu_CA = \mu_{CA} A \rightarrow A^* = -\frac{\mu_{CA}}{\mu_C + \mu_{CA}} < 0\]
-Since we have assumed all parameters to be positive. Then, in there is no treatment $C^*=0$, which is pretty obvious, since $C$ is the amount of chemotherapic drug.\\
-Under this condition, (A1) becomes
-\[ rA \left( r - \frac{A}{K} \right) - \mu_A EA = 0 \rightarrow A \left( r - \frac{rA}{K} - \mu_A E \right) = 0 \]
-Which is certainly true for $A_0^*=0$. Under this conditon, we find from (A2) that $-\mu_E E = 0$ which means $E_0^*=0$.\\
-We find another fixed point by solving
-\[ r - \frac{rA^*}{K} - \mu_A E* = 0 \rightarrow A^* = \frac{rK-\mu_AE^*K}{r} \]
-in the condition of no treatment, (A2) reduces to
+	\begin{cases}
+		0 = rA \bigl( 1 - \frac{A}{K} \bigr) - \mu_A AE - \cancelto{0}{\frac{\mu_{AC} AC}{a+C}} & (A1)\\  
+		0 = -\mu_E E + \frac{pAE}{c+A} - \mu_{AE} AE - \cancelto{0}{\frac{\mu_{EC} EC}{b+C}} & (A2) \\ 
+		0 = \cancelto{0}{\frac{d}{\tau}} - \cancelto{0}{\mu_CC} - \cancelto{0}{\frac{\mu_{CA} CA}{a+A}} & (A3) 
+	\end{cases} 
+\]
+From Equation (A2) we find that $E^*=0$, this cancels out the second term in Equation (A1),
+\[
+	\begin{cases}
+		rA \bigl( 1 - \frac{A}{K} \bigr) - \cancelto{0}{\mu_A AE} = 0 & (A1)\\ 
+		-\mu_E E + \frac{pAE}{c+A} - \mu_{AE} AE  = 0 & (A2) 
+	\end{cases} 
+\]
+such that the following system is obtained
+\[ 
+	\begin{cases}
+		rA \bigl( 1 - \frac{A}{K} \bigr) = 0 & (A1) \\
+		E \bigl( -\mu_E + \frac{pA}{c+A} - \mu_{EA}A \bigr) = 0 & (A2) 
+	\end{cases}
+\]
 
-\[ E\bigl( -\mu_E + \frac{pA}{c+A} - \mu_{EA} A \bigr) = 0 \]
-
-which is true for $E_1^*=0$. Substituting it into $A^*$ we get $A_1^* = \frac{rK - \mu_A 0 K}{r} = K$.\\
-Other fixed points can be found by solving
-\[ -\mu_E + \frac{pA^*}{c+A^*} - \mu_{EA} A^* = 0 \rightarrow {A^*}^2 \mu_{EA} + A^* (\mu_E + \mu_{EA}c - p) + \mu_Ec = 0 \]
-By substituting the values from Table 1 we get (for Cyt)
-
-\[ {(A^*)}^2 4\times 10^{-15} + A^* (4\times 10^{-5} + 4\times 10^{-15} \cdot 10^2 - 4\times 10^{-14}) + \]
-\[+ 4\times 10^{-5} \cdot 10^2 = 0 \rightarrow A^*_{2,3} < 0 \]
-which gives $A^*_2 \approx -100$ and $A^*_3 \approx -10^{-10}$ that have no meaning, biologically speaking. Thus, for $d=0$ we have only two equilibria: $Eq_0^* = \{ A^*=0, E^*=0, C^*=0\}$ and $Eq_1^* = \{ A^*=K, E^*=0, C^*=0\}$.\\
+Equation (A1) is a second-degree equation in $A$, where the first solution is $A^*_1=0$ and the second is $A^*_2=K$. The part of Equation (A2) between parenthesis is now considered to find the other possible values of $A*$.
+\[ -\mu_E + \frac{pA}{c+A} - \mu_{EA}A = 0 \]
+\[ -\mu_E(c+A) + pA - \mu_{EA}(c+A) = 0\]
+\[c\mu_E - (p -\mu_E - c\mu_{EA})\cdot A + \mu_{EA}\cdot A^2 = 0\]
+The result is a second-degree equation, to find the solutions the usual discriminant formula can be employed. It is found that $A^*_3 < 0$, which has no biological relevance, and $A^*_4 = A^*_1 = 0$.\\
+In conclusion, we have two equilibrium points: 
+\[Eq_0^* = \{A^* = 0, E^* = 0, C^* = 0\}\]
+\[Eq_1^* = \{A^* = K, E^* = 0, C^* = 0\}\]
 
 To study the stability of the equilibria of system (A1)-(A3), we need to compute the eigenvalues $\lambda = [\lambda_1,\lambda_2,\lambda_3]$ of the Jacobian matrix $J$
 \[ \mathbf{J} = \begin{bmatrix} \frac{\partial A1}{\partial A} & \frac{\partial A1}{\partial E} & \frac{\partial A1}{\partial C} \\ \\
