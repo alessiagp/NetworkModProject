@@ -1,11 +1,3 @@
-The \textbf{growth rate \textit{in vivo} $r$ of A20 mCherry cells} was calculated according to
-
-\[ r = \frac{\ln{N(t)/N(0)}}{t} = \frac{\ln{16338/3662}}{144} = 0.01\ h^{-1} \]
-
-Where $N(0), N(t)$ are the number of cells at times $0$ (16 days after inoculation) and $t$ (22 days after inoculation).\\
-To determine the \textbf{efficacy of Cyt and Ibr \textit{in vivo}}, five groups of mice were treated with different doses and time periods. Tail vein blood was collected on the day of initiation of treatment and two days after the last treatment. 
-At each time point, the percent change in frequency of A20 cells in each treated mouse relative to the average frequency in the Control group was calculated. From these data, the average A20 frequency change for each treated group was obtained. 
-The difference between the average frequency in each test group and the Control group represents the percent growth inhibition as a function of treatment. Growth inhibition due to Cyt was dose dependent (low dose 9\%, high dose 58\%), whereas inhibition due to Ibr was not (low and high doses about 44\%).
 Based on previous studies and on the \textit{in vivo} experiments, an ODE model was formulated to explain the interaction between CLL cells and chemotherapeutic drugs
 
 \[
@@ -24,4 +16,3 @@ $\frac{dC}{dt}$ describes the first-order pharmacokinetics of a drug with an ext
 $a$ represents the drug concentration producing 50\% of the maximum activity in the A20 mCherry cell population. A mathematical analysis of the model (1)–(3) found that the system is characterized by three fixed points, one of which is asymptotically stable.
 For the \textbf{parameters} to have biological meaning, they must be positive. The initial conditions at $t=0$ are the initial number of A20 cells $A(0) = 5 \times 10^4$ cells/mouse, the initial number of effector cells $E(0) = 2500$ cells/mouse and no drug before the treatment $C(0)=0$. The number of drug molecules is calculated using $\frac{mN_a}{M}$, where $m$ is the mass of the drug, $N_a$ is Avogadro's number and $M$ the molar mass of the drug.
 A \textbf{sensitivity analysis} determined the range of parameter $\mu_{AC}$ which has the most significant impact on cancer cells under the different treatments. To test the growth inhibitory effects of Cyt combined with Ibr, a simulation was ran that predicted 95\% of cell growth inhibition, which represents an 85\% increase in killing efficiency compared to separate treatment.
-%prova per vedere se mi fa i commit giusti
