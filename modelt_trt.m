@@ -33,7 +33,11 @@ mu_ea = 4e-15;
 mu_e = 4e-5;
 tau = 24;
 
-dX = [r*X(1)*(1-(X(1)/K)) - mu_a*X(1)*X(2) - ((mu_ac*X(1)*X(3))/(a+X(3)));
-    -mu_e*X(2) + (p*X(1)*X(2))/(c+X(1)) - mu_ea*X(1)*X(2)  - (mu_ec*X(2)*X(3))/(b+X(3));
-    d*M(round(t/tau,0)) - mu_c*X(3) - (mu_ca*X(3)*X(1))/(a+X(1))];
+dX(1) = r*X(1)*(1-(X(1)/K)) - mu_a*X(1)*X(2) - ((mu_ac*X(1)*X(3))/(a+X(3)));
+dX(2) = -mu_e*X(2) + (p*X(1)*X(2))/(c+X(1)) - mu_ea*X(1)*X(2)  - (mu_ec*X(2)*X(3))/(b+X(3));
+if rem(round(t(1),0),tau) == 0
+    dX(3) = d - mu_c*X(3) - (mu_ca*X(3)*X(1))/(a+X(1)); 
+else
+    dX(3) = - mu_c*X(3) - (mu_ca*X(3)*X(1))/(a+X(1));
+end
 end
