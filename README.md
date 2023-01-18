@@ -4,13 +4,11 @@ Master of Science in Quantitative and Computational Biology, A. A. 2022-2023
 
 ## Paper: Validation of a Mathematical Model Describing the Dynamics of Chemotherapy for Chronic Lymphocytic Leukemia In Vivo, Guzev _et al._
 
----- 
-
 ## Structure of the repository
 
-* folder with report written in LaTeX
-* folder with simulation data 
-* MATLAB code
+* `report-latex`: folder with report written in LaTeX `report-latex`
+* `sim_data`: folder with simulation data `sim_data`
+* MATLAB code (`model_trt.m`, `model_1_trt.m`, `model_no_treatment.m`)
 
 ## Structure of the project
 
