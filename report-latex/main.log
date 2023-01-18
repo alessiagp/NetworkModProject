@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.15)  16 JAN 2023 14:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.15)  18 JAN 2023 17:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
+**main.tecx
 (./main.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (./SelfArx.cls
@@ -1017,7 +1017,7 @@ ent
  []
 
 ) (./section_files/drugs.tex
-<./Figures//Ibrutinib.png, id=71, 1927.2pt x 1400.23125pt>
+<./Figures//Ibrutinib.png, id=83, 1927.2pt x 1400.23125pt>
 File: ./Figures//Ibrutinib.png Graphic file (type png)
 <use ./Figures//Ibrutinib.png>
 Package pdftex.def Info: ./Figures//Ibrutinib.png  used on input line 9.
@@ -1050,7 +1050,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-<./Figures//Cytarabin.png, id=98, 1284.8pt x 1403.2425pt>
+<./Figures//Cytarabin.png, id=110, 1284.8pt x 1403.2425pt>
 File: ./Figures//Cytarabin.png Graphic file (type png)
 <use ./Figures//Cytarabin.png>
 Package pdftex.def Info: ./Figures//Cytarabin.png  used on input line 27.
@@ -1098,12 +1098,24 @@ s|
  []
 
 (./section_files/par_est_exp.tex) (./section_files/stochastic.tex)
-(./section_files/conclusions.tex)
-Overfull \hbox (5.796pt too wide) in paragraph at lines 141--141
-[]\OT1/ptm/m/n/10 (-20) D., C. & A., V. Big data an-a-lyt-ics for per-son-al-iz
-ed medicine.
+(./section_files/our_code.tex
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
+.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `pcr' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Overfull \hbox (54.64474pt too wide) in paragraph at lines 4--5
+\OT1/ptm/m/n/10 (-20) dif-fer-en-tial equa-tions (A1), (A2), (A3) (\OT1/pcr/m/n
+/10 model[]no[]treatment.m\OT1/ptm/m/n/10 (-20) ) 
  []
 
+) (./section_files/our_results.tex) (./section_files/conclusions.tex)
 
 Package fancyhdr Warning: \headheight is too small (11.0pt): 
 (fancyhdr)                Make it at least 20.96901pt, for example:
@@ -1113,7 +1125,13 @@ Package fancyhdr Warning: \headheight is too small (11.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-9.96901pt}.
 
 [4]
-Overfull \hbox (3.77016pt too wide) in paragraph at lines 141--141
+Overfull \hbox (5.796pt too wide) in paragraph at lines 150--150
+[]\OT1/ptm/m/n/10 (-20) D., C. & A., V. Big data an-a-lyt-ics for per-son-al-iz
+ed medicine.
+ []
+
+
+Overfull \hbox (3.77016pt too wide) in paragraph at lines 150--150
 \OT1/ptm/m/n/10 (-20) lym-pho-cytic leukaemia. \OT1/ptm/m/it/10 (-20) Im-muno-g
 enet-ics \OT1/ptm/b/n/10 (-20) 67, \OT1/ptm/m/n/10 (-20) 61{66 (2015). 
  []
@@ -1131,39 +1149,46 @@ Package fancyhdr Warning: \headheight is too small (11.0pt):
 [5
 
 ] (./main.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2999101BC1C4E23FA28329F450817F85;2622.
+(rerunfilecheck)             Checksum: B1ECAC910B9A85A030B35A34EA61590E;3001.
+
+Package biblatex Warning: Please rerun LaTeX.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24666 strings out of 478268
- 430820 string characters out of 5846346
- 1296176 words of memory out of 5000000
- 42116 multiletter control sequences out of 15000+600000
- 545478 words of font info for 350 fonts, out of 8000000 for 9000
+ 24731 strings out of 478268
+ 431852 string characters out of 5846346
+ 1295926 words of memory out of 5000000
+ 42162 multiletter control sequences out of 15000+600000
+ 545993 words of font info for 352 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,19n,77p,1001b,1763s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 70i,19n,77p,1002b,1771s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
 live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
 ve/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
 e/2022/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/local/t
-exlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/
-2022/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2022/t
-exmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-di
-st/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2022/texmf-dist/fon
-ts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/ur
-w/symbol/usyr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utm
-b8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><
-/usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local
-/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 274197 bytes).
+exlive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2
+022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2022/tex
+mf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2022/texmf-dis
+t/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts
+/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
+/urw/symbol/usyr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/symbol
+/usyr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
+</usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/loc
+al/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive
+/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (5 pages, 284173 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 500000)
- 102531 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 235 PDF objects out of 1000 (max. 8388607)
+ 190 compressed objects within 2 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 103067 words of extra memory for PDF output out of 106986 (max. 10000000)
 
