@@ -27,6 +27,9 @@
 \usepackage{csquotes}
 \usepackage[makeroom]{cancel}
 \usepackage[sorting=none, style=nature]{biblatex}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
 \bibliography{bibliography.bib}
 
 \graphicspath{{./Figures/}}
@@ -111,15 +114,18 @@
 
 %------------------------------------------------
 
-\section{Paper results}
+\section{Paper analysis}
 \subsection{Mathematical model}
 \input{./section_files/model.tex}
 
 \subsection{Stability Analysis}
 \input{./section_files/stability-a.tex}
 
-\subsection{Parameter estimation with respect to experiments}
+\subsection{Parameter estimation}
 \input{./section_files/par_est_exp.tex}
+
+\subsection{Simulation of a combined therapy}
+\input{./section_files/combined.tex}
 
 \subsection{Stochastic approach}
 \input{./section_files/stochastic.tex}
