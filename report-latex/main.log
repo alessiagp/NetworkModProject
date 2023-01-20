@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.15)  20 JAN 2023 09:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.15)  20 JAN 2023 10:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1132,9 +1132,9 @@ Overfull \hbox (2.82245pt too wide) in paragraph at lines 22--30
 File: ./Figures//4.png Graphic file (type png)
 <use ./Figures//4.png>
 Package pdftex.def Info: ./Figures//4.png  used on input line 34.
-(pdftex.def)             Requested size: 320.99168pt x 181.37334pt.
+(pdftex.def)             Requested size: 246.91812pt x 139.51877pt.
 
-Overfull \hbox (78.57423pt too wide) in paragraph at lines 34--35
+Overfull \hbox (4.50067pt too wide) in paragraph at lines 34--35
  [][] 
  []
 
@@ -1142,12 +1142,7 @@ Overfull \hbox (78.57423pt too wide) in paragraph at lines 34--35
 File: ./Figures//table.png Graphic file (type png)
 <use ./Figures//table.png>
 Package pdftex.def Info: ./Figures//table.png  used on input line 44.
-(pdftex.def)             Requested size: 344.4809pt x 68.65527pt.
-
-Overfull \hbox (102.06345pt too wide) in paragraph at lines 44--45
- [][] 
- []
-
+(pdftex.def)             Requested size: 241.13925pt x 48.0592pt.
 ) (./section_files/combined.tex
 
 Package fancyhdr Warning: \headheight is too small (11.0pt): 
@@ -1163,9 +1158,9 @@ res//table.png>]
 File: ./Figures//combined.png Graphic file (type png)
 <use ./Figures//combined.png>
 Package pdftex.def Info: ./Figures//combined.png  used on input line 4.
-(pdftex.def)             Requested size: 322.86102pt x 190.41423pt.
+(pdftex.def)             Requested size: 249.06381pt x 146.89073pt.
 
-Overfull \hbox (80.44357pt too wide) in paragraph at lines 4--5
+Overfull \hbox (6.64636pt too wide) in paragraph at lines 4--5
  [][] 
  []
 
