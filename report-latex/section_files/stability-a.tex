@@ -59,26 +59,3 @@ For $Eq_1^*$ we have
 \[ J = \begin{pmatrix} -r & -\mu_{AE}K & -\frac{\mu_{AC}K}{a} \\ 0 & -\mu_E + \frac{pK}{c+K} - \mu_{EA}K \\ 0&0& -\mu_C - \frac{\mu_{CA}K}{a+K} \end{pmatrix} \]
 
 which has eigenvalues $\lambda = [-0.01, -4\times 10^{-5}, -0.35]$. So $Eq_1^*$ is asymptotically stable.
-\subsubsection{Stability of periodic tumour-free solutions} 
-Eq. (A1) admits the solution $A^* = E^* = 0$ with chemotherapy dynamics satisfying
-
-\[ \frac{dC}{dt} = \sum_{m=0}^\infty \mathbf{d} \delta (t-m\tau) -\mu_C C \]
-
-The delta function allows the determine the dynamics between consecutive injections of the drug, \textit{i.e.} when the dirac delta vanishes
-\[ \frac{dC}{dt} = -\mu_C C, \quad \text{when} \ n\tau \leq t < (n+1)\tau  \]
-
-If we set the initial condition $C(0) = d$
-
-\[ C(t) = C(0) e^{-\mu_C t} = d e^{-\mu_C t}, \quad \text{when} \quad 0 \leq t < \tau \]
-\[C(t) = d e^{-\mu_C t} + \tau e^{-\mu_C \tau}, \quad \text{when} \quad \tau \leq t < 2\tau \] 
-\[\dots\]
-\[ C(t) = d e^{-\mu_C t} + n\tau e^{-\mu_C \tau}, \quad \text{when} \quad n\tau \leq t < (n+1)\tau \]
-
-In the limit of large $n$, $C(t)$ converges to a periodic cycle $\tilde{C}(t)$. The associated cancer-free state will be
-
-\[ \begin{cases}
-	A^* = E^* = 0 \\ 
-	\tilde{C}(t) =  d e^{-\mu_C t} + n\tau e^{-\mu_C \tau} 
-\end{cases} \]
-%\subsubsection{Linearization around equilibria} 
-%This method allows the study of local properties of a non-linear system of differential equations. Let $Eq = (A^*,E^*,C^*)$ be an equilibrium of (1)-(3). By defining $x_1 = A(t) - A^*, x_2 = E(t) - E^*$ and $x_3 = C(t) - C^*$ and then 
