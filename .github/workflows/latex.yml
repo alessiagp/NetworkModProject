@@ -1,6 +1,7 @@
-- name: Build LaTeX Document
-  uses: lyuwen/build-latex-action@v1.0.1
----
-with:
-  file: 'main.tex'
-  options: '-shell-escape'
+name: 'Build LaTeX Document'
+on: [push]
+jobs: 
+  - uses: lyuwen/build-latex-action@v1.0.1 
+    with:
+      file: 'main.tex'
+      options: '-shell-escape'
