@@ -1,5 +1,6 @@
 - name: Build LaTeX Document
-uses: lyuwen/build-latex-action@v1.0.1
+  uses: lyuwen/build-latex-action@v1.0.1
+---
 with:
   file: 'main.tex'
   options: '-shell-escape'
