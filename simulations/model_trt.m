@@ -26,8 +26,8 @@ K = 4e6;    % Max A20 number [cells/mouse]
 %mu_ac = 0.001; % Cyt 0.12 mg/kg 5 days
 %mu_ac = 0.0041; % Ibr 9 mg/kg on days 1-5 and 8-10
 %mu_ac = 0.0042; % Ibr 18 mg/kg on days 1-5 and 8-10
-%mu_ac = 0.0161; % Cyt 62.5 + Ibr 9 mg/kg days 1-5 and 8-10
-mu_ac = 0.0043; % Ibr 25 mg/kg on days 1-5 and 8-10
+mu_ac = 0.0161; % Cyt 62.5 + Ibr 9 mg/kg days 1-5 and 8-10
+%mu_ac = 0.0043; % Ibr 25 mg/kg on days 1-5 and 8-10
 
 mu_ca = mu_ac * 10; % Deactivation of drug due to killing of A20 [h^-1]
 
@@ -35,10 +35,10 @@ mu_ca = mu_ac * 10; % Deactivation of drug due to killing of A20 [h^-1]
 
 %d = 1.25 * 2.4e18; % Cyt 62.5 mg/kg
 %d = 2.4e-3 * 2.4e18; % Cyt 0.12 md/kg
-%d = 0.18 * 1.4e18; % Ibr 9 mg/kg
+d = 0.18 * 1.4e18; % Ibr 9 mg/kg
 %d = 0.36 * 1.4e18; % Ibr 18 mg/kg
-%d = 1.25 * 2.4e15 + 0.18 * 1.4e15; %Cyt 62.5 + Ibr 9
-d = 0.5 * 1.4e18; % Ibr 25 mg/kg
+%d = 1.25 * 2.4e18 + 0.18 * 1.4e18; %Cyt 62.5 + Ibr 9
+%d = 0.5 * 1.4e18; % Ibr 25 mg/kg
 
 %%% Chemical deactivation rate [h^-1]
 
@@ -54,11 +54,16 @@ c = 1e2;    % Num of A20 producing 50% of max immune activation [cells]
 b = 5e6;    % Drug amount producing 50% max effect on healty cells [molecules]
 mu_ea = 4e-15; % A20-effectors interaction coefficient [h^-1]
 mu_e = 4e-5; % Death rate of effecors [h^-1]
+
+e0 = 4.2; % Natural production of effector cells [cells/h]
 tau = 24;
 
 A = r*X(1)*(1-(X(1)/K)) - mu_a*X(1)*X(2) - ((mu_ac*X(1)*X(3))/(a+X(3)));
-E = -mu_e*X(2) + (p*X(1)*X(2))/(c+X(1)) - mu_ea*X(1)*X(2)  - (mu_ec*X(2)*X(3))/(b+X(3));
+E = e0 -mu_e*X(2) + (p*X(1)*X(2))/(c+X(1)) - mu_ea*X(1)*X(2)  - (mu_ec*X(2)*X(3))/(b+X(3));
 if t(1) > 336 && rem(round(t(1),0),tau) == 0 && t(1) < 432 || rem(round(t(1),0),tau) == 0 && (t(1) > 480)&&(t(1) < 528)
+%if t(1) > 336 && rem(round(t(1),0),tau) == 0 && t(1) < 432
+%if t(1) > 336 && rem(round(t(1),0),tau) == 0 && t(1) < 384
+%if t(1) < 0
     C = d - mu_c*X(3) - (mu_ca*X(3)*X(1))/(a+X(1)); 
 else
     C = - mu_c*X(3) - (mu_ca*X(3)*X(1))/(a+X(1));
