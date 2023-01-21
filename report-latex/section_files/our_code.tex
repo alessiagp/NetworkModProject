@@ -40,3 +40,10 @@ dX = [A;E;C];
 end
 
 \end{lstlisting}
+
+The code above is referred to the cytamidin high group. To simulate the other treatments it is sufficient to change the $\mu_{AC}$ and $d$ parameters and the times in the conditional statements.
+To reproduce the behaviour of the shifted dirac-delta function found in equation (3) we used a conditional statement that checks, in between specific intervals, if the actual time is a multiple of $\tau$ (i.e., the time between two shots). If this condition holds, an amount of drug $d$ is added to the system. Otherwise, the number of drug molecules is allowed to decrease. 
+The parameters for the equation were taken from the reference paper, whereas the parameters for the integration algorithm were adjusted in order to deal with the simulation of the treatments. In particular, the maximum step allowed was set to 1 hour to prevent the integrator to "skip" some treatments, and the tolerance was increased to avoid errors due to the abrupt increase in the number of drug molecules in correspondence to the delivery of treatments.
+Since the number of molecules per dose $d$ used in the paper does not match the correct one calculated for the different conditions, we performed simulations both with the reported value $d \sim 10^{15}$ and the correct value $d \sim 10^{18}$. Moreover, we run additional simulations adding to equation (2) a term $e_0$ accounting for the natural production of effector cells. This parameter was derived form ref [36] of the main paper.
+Given that in reality Cyt has to be delivered though infusion, we adapted our code to support a continuous intake of drug and performed some simulations by adapting the treatment protocols reported in [cytamidine paper].
+From the results of the various simulations we calculated the percentage growth inhibition with respect to the control group two days after the end of the treatment (growth inhibition $= 1 - \frac{A_t}{A_{nt}}$, where $A_t$ is the number of cancer cells in presence of treatment two days after the end of the treatment and $A_{nt}$ is the number of cancer cells in the control at the same time.)
