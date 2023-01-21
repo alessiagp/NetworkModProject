@@ -1,8 +1,42 @@
-The deterministic simulations presented in the paper were replicated by using MATLAB and the library \texttt{ode45}. This library is dedicated to solve systems of differential equations in the form $y'=f(t,y)$ and is based on an explicit Runge-Kutta 45 algorithm. 
-Three different algorithms were developed:
-\begin{enumerate}
-	\item A model without treatment, replicating the system of differential equations (A1), (A2), (A3)
-	\item A model with dosage of 62.5 mg/kg of Cyt
-	\item Another model with dosage of
-\end{enumerate}
+The deterministic simulations presented in the paper were replicated by using the MATLAB suite \texttt{ode45}. This library, dedicated to solve systems of differential equations in the form $y'=f(t,y)$, implemnts an adaptive-step Runge-Kutta integration algorithm of the fourth-order. 
+We developed the following script to solve the system of equation (1), (2), (3) for each treatment condition.
 
+\begin{lstlisting}
+
+Tf = 1440; % Final time
+tspan = [0;Tf];
+X0 = [500,2500,0]; % Starting conditions [A(0),E(0),C(0)]
+op1 = odeset('MaxStep',1,'RelTol',1e-2,'AbsTol',1e-4);
+
+[t,X] = ode45(@model,tspan,X0,op1);
+
+function dX = model(t,X)
+
+%%% Parameters definition
+r = 0.01;   % A20 growth rate [h^-1]
+K = 4e6;    % Max A20 number [cells/mouse]
+mu_ac = 0.012; % Cyt 62.5 mg/kg for 3 days cytotoxicity rate [h^−1]
+mu_ca = mu_ac * 10; % Deactivation of drug due to killing of A20 [h^-1]
+d = 1.25 * 2.4e18; % Cyt 62.5 mg/kg dose [molecules/mouse]
+mu_c = 0.231; % Cyt chemical deactivation rate [h^-1]
+mu_a = 2e-12; % Effectors-A20 interaction coefficient [h^-1]
+a = 2e3;    % Drug amount producing 50% of max effect on A20 [molecules]
+p = 4e-14; % Production rate of effectors stimulated by A20 [h^-1]
+mu_ec = 417; % Mortality rate of drug on effector cells [h^-1]
+c = 1e2;    % Num of A20 producing 50% of max immune activation [cells]
+b = 5e6;    % Drug amount producing 50% max effect on healty cells [molecules]
+mu_ea = 4e-15; % A20-effectors interaction coefficient [h^-1]
+mu_e = 4e-5; % Death rate of effecors [h^-1]
+tau = 24;
+
+A = r*X(1)*(1-(X(1)/K)) - mu_a*X(1)*X(2) - ((mu_ac*X(1)*X(3))/(a+X(3)));
+E = -mu_e*X(2) + (p*X(1)*X(2))/(c+X(1)) - mu_ea*X(1)*X(2)  - (mu_ec*X(2)*X(3))/(b+X(3));
+if t(1) > 336 && rem(round(t(1),0),tau) == 0 && t(1) < 384
+    C = d - mu_c*X(3) - (mu_ca*X(3)*X(1))/(a+X(1)); 
+else
+    C = - mu_c*X(3) - (mu_ca*X(3)*X(1))/(a+X(1));
+end
+dX = [A;E;C];
+end
+
+\end{lstlisting}
