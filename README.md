@@ -12,8 +12,8 @@ Master of Science in Quantitative and Computational Biology, A. A. 2022-2023
 
 ## Structure of the project
 
-* Introduction: what is CLL
-* Materials and methods: focus on the two drugs and their mode of action, experimental setup used on the paper
-* Results presented in the paper, including revised calculations of the mathematical model, of the stability analysis, and of parameter estimation
-* Results of the simulations obtained by the students
+* Introduction: aim of the project, what is CLL
+* Chemotherapeutic drugs: focus on the two drugs and their mode of action
+* Results presented in the paper, including revised calculations of the mathematical model, of the stability analysis, the experimental setup, and parameter estimation
+* MATLAB simulations: codes and results of the simulations obtained by the students
 * Conclusions
