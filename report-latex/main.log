@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.15)  22 JAN 2023 15:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.15)  22 JAN 2023 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1250,10 +1250,15 @@ Overfull \hbox (14.3241pt too wide) in paragraph at lines 43--44
 /10 ^^A []\OT1/ztmcm/m/n/10 [\OML/ztmcm/m/it/10 mg \OMS/ztmcm/m/n/10 ^^A
  []
 
-) (./section_files/our_results.tex
+) (./section_files/results.tex
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 1.
+               Default added (so using `tbp') on input line 6.
+
+
+Overfull \hbox (8.45091pt too wide) in paragraph at lines 7--18
+[][] 
+ []
 
 ) (./section_files/conclusions.tex)
 
@@ -1280,9 +1285,7 @@ Package fancyhdr Warning: \headheight is too small (11.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-9.96901pt}.
 
-[8
-
-] (./main.aux)
+[8] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1293,11 +1296,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26301 strings out of 478268
- 455653 string characters out of 5846346
- 1322825 words of memory out of 5000000
- 43680 multiletter control sequences out of 15000+600000
- 548197 words of font info for 372 fonts, out of 8000000 for 9000
+ 26308 strings out of 478268
+ 455822 string characters out of 5846346
+ 1322885 words of memory out of 5000000
+ 43683 multiletter control sequences out of 15000+600000
+ 548398 words of font info for 374 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,19n,77p,1572b,1763s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -1317,10 +1320,10 @@ b></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/lo
 cal/texlive/2022/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texli
 ve/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/te
 xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 616246 bytes).
+Output written on main.pdf (8 pages, 618535 bytes).
 PDF statistics:
- 294 PDF objects out of 1000 (max. 8388607)
- 233 compressed objects within 3 object streams
- 53 named destinations out of 1000 (max. 500000)
+ 298 PDF objects out of 1000 (max. 8388607)
+ 237 compressed objects within 3 object streams
+ 54 named destinations out of 1000 (max. 500000)
  103628 words of extra memory for PDF output out of 106986 (max. 10000000)
 
