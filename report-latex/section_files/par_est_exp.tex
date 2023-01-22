@@ -16,7 +16,7 @@ For what concerns $\mu_{AC}$, we notice that it's a crucial parameter for the mo
 	each administration. 
 \end{enumerate}
 To estimate $\mu_{AC}$ in groups 2 to 5, blood was collected from all mice, on the day of the initiation of the treatment and 2 days after the last treatment. At each of the two time points and in each treated mouse, the percent change in the frequency of A20 cells relative to the average
-frequency in the control group was calculated. Then, for each treated group, these individual measurements were then averaged. This led to the estimation of the \textit{experimental cell growth inhibition percentage} for the 4 treated groups. \par
+frequency in the control group was calculated. Then, for each treated group, these individual measurements were then averaged. This led to the estimation of the \textit{experimental cell growth inhibition percentage} for the 4 treated groups (Fig. \ref{fig:tables}). \par
 \begin{figure} [h]
 \centering
 \begin{subfigure}{0.49\textwidth}
@@ -27,11 +27,15 @@ frequency in the control group was calculated. Then, for each treated group, the
 \centering
 \includegraphics[scale = 0.18] {inhibition.png}
 \end{subfigure}
+\caption{Drug dosages and resulting experimental cell growth inhibition percentage in the four treatment groups}
+\label{fig:tables}
 \end{figure}
-We notice that growth inhibition due to Cyt was dose dependent, whereas inhibition due to Ibr was not. At this point, a total of 12 deterministic simulations were performed, 3 for each treatment group, using $(A = 5.4 \cdot 10^{4}, E = 2500, C = 0)$ as starting point. In the context of the same treatment group, the simulations set themselves apart for the numerical choice of $\mu_{AC}$: Cyt Low was tested with $\mu_{Ac} = 0.0001$, $\mu_{Ac} = 0.001$ and $\mu_{Ac} = 0.003$. Cyt High was tested with $\mu_{Ac} = 0.005$, $\mu_{Ac} = 0.012$, $\mu_{Ac} = 0.02$. Ibr Low was tested with $\mu_{Ac} = 0.001$, $\mu_{Ac} = 0.0041$, $\mu_{Ac} = 0.005$. Ibr High with $\mu_{Ac} = 0.002$, $\mu_{Ac} = 0.0042$, $\mu_{Ac} = 0.006$. Black lines represent cancer evolution without treatment. The goal was finding, for each treatment protocol, the value for $\mu_{Ac}$, among the one proposed, that gives a \textit{simulated cell growth inhibition percentage} similar for the one obtained from the experiments. 
+We notice that growth inhibition due to Cyt was dose dependent, whereas inhibition due to Ibr was not. At this point, a total of 12 deterministic simulations were performed (Fig. \ref{fig:12sims}), 3 for each treatment group, using $(A = 5.4 \cdot 10^{4}, E = 2500, C = 0)$ as starting point. In the context of the same treatment group, the simulations set themselves apart for the numerical choice of $\mu_{AC}$: Cyt Low was tested with $\mu_{Ac} = 0.0001$, $\mu_{Ac} = 0.001$ and $\mu_{Ac} = 0.003$. Cyt High was tested with $\mu_{Ac} = 0.005$, $\mu_{Ac} = 0.012$, $\mu_{Ac} = 0.02$. Ibr Low was tested with $\mu_{Ac} = 0.001$, $\mu_{Ac} = 0.0041$, $\mu_{Ac} = 0.005$. Ibr High with $\mu_{Ac} = 0.002$, $\mu_{Ac} = 0.0042$, $\mu_{Ac} = 0.006$. Black lines represent cancer evolution without treatment. The goal was finding, for each treatment protocol, the value for $\mu_{Ac}$, among the one proposed, that gives a \textit{simulated cell growth inhibition percentage} similar for the one obtained from the experiments (Fig. \ref{fig:finaltab}). 
 \begin{figure} [h]
     \centering
     \includegraphics[scale = 0.20] {4.png}
+    \caption{Evolution of the system in the absence of treatment (black lines) and with different choices for $\mu_{Ac}$, in the context of every treatment protocol}
+    \label{fig:12sims}
 \end{figure}
 \begin{itemize}
     \item Cyt Low has a target cell growth inhibition percentage of $9 \%$. This is best reached by using $\mu_{Ac} = 0.001$, that provided $10 \%$ of growth inhibition. 
@@ -42,5 +46,7 @@ We notice that growth inhibition due to Cyt was dose dependent, whereas inhibiti
 \begin{figure} [h]
     \centering
     \includegraphics[scale = 0.28] {table.png}
+    \caption{Comparision between the experimental cell growth inhibition percentages and the simulated ones, obtained by fine tuning $\mu_{Ac}$ for each protocol}
+    \label{fig:finaltab}
 \end{figure}
 
