@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Guadagnin Pattaro
+    given-names: Alessia
+  - family-names: Plazzotta
+    given-names: Giovanni
+  - family-names: Zanon
+    given-names: Annarita
+title: "Network Modeling and Simulation Project Repository"
+version: 1.0

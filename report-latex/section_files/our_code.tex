@@ -1,49 +1,57 @@
 The deterministic simulations presented in the paper were replicated by using the MATLAB suite \texttt{ode45}. This library, dedicated to solve systems of differential equations in the form $y'=f(t,y)$, implemnts an adaptive-step Runge-Kutta integration algorithm of the fourth-order. 
-We developed the following script to solve the system of equation (1), (2), (3) for each treatment condition.
+A MATLAB script to solve the system of equation (1), (2), (3) for each treatment condition was developed and reported in a GitHub repository dedicated to this project \cite{project-repo}.
 
-\begin{lstlisting}
-
-Tf = 1440; % Final time
-tspan = [0;Tf];
-X0 = [500,2500,0]; % Starting conditions [A(0),E(0),C(0)]
-op1 = odeset('MaxStep',1,'RelTol',1e-2,'AbsTol',1e-4);
-
-[t,X] = ode45(@model,tspan,X0,op1);
-
-function dX = model(t,X)
-
-%%% Parameters definition
-r = 0.01;   % A20 growth rate [h^-1]
-K = 4e6;    % Max A20 number [cells/mouse]
-mu_ac = 0.012; % Cyt 62.5 mg/kg for 3 days cytotoxicity rate [h^−1]
-mu_ca = mu_ac * 10; % Deactivation of drug due to killing of A20 [h^-1]
-d = 1.25 * 2.4e18; % Cyt 62.5 mg/kg dose [molecules/mouse]
-mu_c = 0.231; % Cyt chemical deactivation rate [h^-1]
-mu_a = 2e-12; % Effectors-A20 interaction coefficient [h^-1]
-a = 2e3;    % Drug amount producing 50% of max effect on A20 [molecules]
-p = 4e-14; % Production rate of effectors stimulated by A20 [h^-1]
-mu_ec = 417; % Mortality rate of drug on effector cells [h^-1]
-c = 1e2;    % Num of A20 producing 50% of max immune activation [cells]
-b = 5e6;    % Drug amount producing 50% max effect on healty cells [molecules]
-mu_ea = 4e-15; % A20-effectors interaction coefficient [h^-1]
-mu_e = 4e-5; % Death rate of effecors [h^-1]
-tau = 24;
-
-A = r*X(1)*(1-(X(1)/K)) - mu_a*X(1)*X(2) - ((mu_ac*X(1)*X(3))/(a+X(3)));
-E = -mu_e*X(2) + (p*X(1)*X(2))/(c+X(1)) - mu_ea*X(1)*X(2)  - (mu_ec*X(2)*X(3))/(b+X(3));
-if t(1) > 336 && rem(round(t(1),0),tau) == 0 && t(1) < 384
-    C = d - mu_c*X(3) - (mu_ca*X(3)*X(1))/(a+X(1)); 
-else
-    C = - mu_c*X(3) - (mu_ca*X(3)*X(1))/(a+X(1));
-end
-dX = [A;E;C];
-end
-
-\end{lstlisting}
-
-The code above is referred to the cytamidin high group. To simulate the other treatments it is sufficient to change the $\mu_{AC}$ and $d$ parameters and the times in the conditional statements.
-To reproduce the behaviour of the shifted dirac-delta function found in equation (3) we used a conditional statement that checks, in between specific intervals, if the actual time is a multiple of $\tau$ (i.e., the time between two shots). If this condition holds, an amount of drug $d$ is added to the system. Otherwise, the number of drug molecules is allowed to decrease. 
-The parameters for the equation were taken from the reference paper, whereas the parameters for the integration algorithm were adjusted in order to deal with the simulation of the treatments. In particular, the maximum step allowed was set to 1 hour to prevent the integrator to "skip" some treatments, and the tolerance was increased to avoid errors due to the abrupt increase in the number of drug molecules in correspondence to the delivery of treatments.
+The \texttt{simulations} folder contains the scripts used to run the simulation of our ODE system and the scripts used to plot the results. The folder \texttt{sim\_data} contains the simulation results in form of CSV files, whose column represent: time, number of cancer cells, number of effector cells, number of drug molecules. The file names indicate the conditions, i.e.
+\begin{itemize}
+	\item No treatment
+	\item Cyt\_high: Cyt $62.5 mg/kg$ 3 days
+	\item Cyt\_low: Cyt $0.12 mg/kg$ 5 days
+	\item Ibr\_high: Ibr $9 mg/kg$ days 1-5 and 8-10
+	\item Ibr\_low: Ibr $18 mg/kg$ days 1-5 and 8-10
+	\item Cyt\_Ibr: Cyt $62.5 +$ Ibr $9 mg/kg$ days 1-5 and 8-10
+\end{itemize}
+These were taken directly from the paper. Additionally we simulated the following conditions:
+\begin{itemize}
+	\item Ibr\_25: Ibr $25 mg/kg$ days 1-5 and 8-10
+	\item ? ?
+\end{itemize}
+The folder \texttt{figures} contains the plots of the CSV files obtained using the script \texttt{plotter.py} found in the main folder.\\
+\subsection{Scripts}
+\subsubsection{\texttt{model\_no\_trt.m}}
+This script contains a simplified model without treatment.
+\subsubsection{\texttt{model\_trt.m}}
+This script contains the final model of ODEs. The options for the numerical solution of the model are: \texttt{\'MaxStep\'=1} to avoid that the integration skips a treatment. \texttt{'RelTol' = 1e-2} and \texttt{'AbsTol' = 1e-4} to avoid numerical errors due to the abrupt change in the number of drug molecules when a treatment is performed.\\
+This script is referred to the high Cyt dosage group. To simulate the other treatments it is sufficient to change the $\mu_{AC}$ and $d$ parameters and the times in the conditional statements.
+To reproduce the behaviour of the shifted dirac-delta function found in equation (3) we used a conditional statement that checks, in between specific intervals, if the actual time is a multiple of $\tau$ (i.e., the time between two shots). If this condition holds, an amount of drug $d$ is added to the system. Otherwise, the number of drug molecules is allowed to decrease.\\
+The parameters for the equation were taken from the reference paper, whereas the parameters for the integration algorithm were adjusted in order to deal with the simulation of the treatments. In particular, the maximum step allowed was set to 1 hour to prevent the integrator to \textit{skip} some treatments, and the tolerance was increased to avoid errors due to the abrupt increase in the number of drug molecules in correspondence to the delivery of treatments.\\
 Since the number of molecules per dose $d$ used in the paper does not match the correct one calculated for the different conditions, we performed simulations both with the reported value $d \sim 10^{15}$ and the correct value $d \sim 10^{18}$. Moreover, we run additional simulations adding to equation (2) a term $e_0$ accounting for the natural production of effector cells. This parameter was derived form ref [36] of the main paper.
-Given that in reality Cyt has to be delivered though infusion, we adapted our code to support a continuous intake of drug and performed some simulations by adapting the treatment protocols reported in [cytamidine paper].
+Given that in reality Cyt has to be delivered though infusion, we adapted our code to support a continuous intake of drug and performed some simulations by adapting the treatment protocols reported in \cite{cyt-3}.
 From the results of the various simulations we calculated the percentage growth inhibition with respect to the control group two days after the end of the treatment (growth inhibition $= 1 - \frac{A_t}{A_{nt}}$, where $A_t$ is the number of cancer cells in presence of treatment two days after the end of the treatment and $A_{nt}$ is the number of cancer cells in the control at the same time.)
+
+\subsubsection{\texttt{model\_cyt\_infusion.m}}
+This treatment protocols are taken from \cite{cyt-3}.
+\begin{itemize}
+	\item \texttt{Cyt\_low}: 200 mg $\cdot$ 24h / m$^2$ for 7 consecutive days + 1000 mg $\cdot$ 3h / m$^2$ every 12 h for 6 days.
+	\begin{itemize}
+		\item 200 mg $\cdot$ 24h / m$^2$ = 66.7 mg $\cdot$ 24h / kg = 2.8 mg $\cdot$ h / kg, this corresponds to 1.4 mg/mouse in a 24h infusion, which corresponss to $1.4 \cdot 2.4e18$ molecules/mouse per one dose, since the treatments lasts one week, the total numbe of molecules will be: $9.8 \cdot 2.4e18$ : $\mu_{AC} = 0.00148$
+		\item 1000 mg/m$^2$ = 333 mg $\cdot$ 3h / kg = 111 mg * h / kg, this corresponds to 2.3 mg/mouse in a 3h infusion, which corresponds to $2.3 \cdot 2.4e18$ molecules/mouse per dose: $\mu_{AC} = 0.021$
+	\end{itemize}
+
+	\item \texttt{Cyt\_high}: 1000 mg $\cdot$ 3h / m$^2$ every 12 h for 5 days + 2000 mg $\cdot$ 6h / m$^2$ every 12 h on days 12, 13, 15, 17.
+	\begin{itemize}
+		\item 1000 mg/m$^2$ = 333 mg $\cdot$ 3h / kg = 111 mg $\cdot$ h / kg, this corresponds to 2.3 mg/mouse in a 3h infusion, which corresponds to $2.3 \cdot 2.4e18$ molecules/mouse per dose: $\mu_{AC} = 0.021$
+		\item 2000 mg/m$^2$ = 667 mg $\cdot$ 6h / kg = 111 mg $\cdot$ / kg, this corresponds to 4.6 mg/mouse in a 6h infusion, which corresponds to $4.6 \cdot 2.4e18$ molecules/mouse per dose: $\mu_{AC} = 0.021$. To estimate $\mu_{AC}$ in these conditions, we used the line $\mu_{AC} = 0.00018 \cdot \text{dose} [mg \cdot h/kg]$$+ 0.00098$.
+	\end{itemize}
+\end{itemize}
+
+To calculate the number of molecules per time-step dt, we used the mean value of the time-step when the treatment asre delivered. This was calculated by looking at the vecors of time of some "dummy" simulations.
+\subsubsection{\texttt{sim\_data} directory}
+In the files with the \texttt{\_2m} suffix, from the starting condition $X_0=(5 \times 10^4,2500,0)$, the simulation is run without treatment for 2 weeks of simulated time. Then the treatment is carried out as described above, depending on the drug. In the *figures* folder it is possible to find the plots referring to the different simulations.\\
+The simulations were carried out using both O (1e18) number of molecules or O (1e15) number of molecules, in the latter case the suffix \texttt{\_1e15drug} was added.
+Assuming that the Cytotoxicity rate in the presence of drug $\mu_{AC}$ for Ibr scales as the line fitted to the points sonsidered in the paper, i.e., (9,0.0041) and (18,0.0042), we get: $\mu_{AC}=0.00001 \cdot dose + 0.004$.  Then, to obtain $\mu_{AC}=0.01$ we would need a dose of $600 mg/kg$. On the other hand, with a more conservative scaling (i.e. an improvement of 0.001 at each doubing of the concentration) to obtain the same effect we would need a dose of $9^{59}$ mg/kg (which is insane).
+in ref [32] and [34] of the main paper, a dose of 25 mg/kg per day of Ibr is used, and results in >90\% inhibition of BTK. The $\mu_{ac}$ associated with this dose is $\mu_{ac} = 0.0043$ and the number of molecules per dose is $0.5 \times 1.4 \times 10^{18}$.
+In the files with the \texttt{\_e0} suffix, a term for the natural production of effector cells was addes. This term $c0 = 4.2 \ [cells/h]$ was derived from ref. [36] of main paper.
+\begin{itemize}
+	\item \texttt{Cyt\_low} = 200 mg / m$^2$ = 66.7 mg $\cdot$ 24h / kg = 2.8 mg $\cdot$ h / kg. \texttt{Cyt\_low} = 1.4 mg / mouse (24h infusion)
+	\item \texttt{Cyt\_high} = 2500 mg/m$^2$ = 833 mg $\cdot$ 3h / kg = 277 mg $\cdot$ h / kg 3h - 2 times a day \texttt{Cyt\_high} = 17.5 mg / mouse
+\end{itemize}
