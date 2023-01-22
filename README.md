@@ -1,5 +1,5 @@
 # Network Modeling and Simulation Project
-Repository for the final project of the course of Network Modeling and Simulation, prof. Marchetti, done by Alessia Guadagnin Pattaro, Giovanni Plazzotta, and Annarita Zanon. 
+Repository for the final project of the course of Network Modeling and Simulation, prof. Marchetti and Reali, done by Alessia Guadagnin Pattaro, Giovanni Plazzotta, and Annarita Zanon. 
 Master of Science in Quantitative and Computational Biology, A. A. 2022-2023
 
 ## Paper: Validation of a Mathematical Model Describing the Dynamics of Chemotherapy for Chronic Lymphocytic Leukemia In Vivo, Guzev _et al._
