@@ -45,13 +45,3 @@ This treatment protocols are taken from \cite{cyt-3}.
 \end{itemize}
 
 To calculate the number of molecules per time-step dt, we used the mean value of the time-step when the treatment asre delivered. This was calculated by looking at the vecors of time of some "dummy" simulations.
-\subsubsection{\texttt{sim\_data} directory}
-In the files with the \texttt{\_2m} suffix, from the starting condition $X_0=(5 \times 10^4,2500,0)$, the simulation is run without treatment for 2 weeks of simulated time. Then the treatment is carried out as described above, depending on the drug. In the *figures* folder it is possible to find the plots referring to the different simulations.\\
-The simulations were carried out using both O (1e18) number of molecules or O (1e15) number of molecules, in the latter case the suffix \texttt{\_1e15drug} was added.
-Assuming that the Cytotoxicity rate in the presence of drug $\mu_{AC}$ for Ibr scales as the line fitted to the points sonsidered in the paper, i.e., (9,0.0041) and (18,0.0042), we get: $\mu_{AC}=0.00001 \cdot dose + 0.004$.  Then, to obtain $\mu_{AC}=0.01$ we would need a dose of $600 mg/kg$. On the other hand, with a more conservative scaling (i.e. an improvement of 0.001 at each doubing of the concentration) to obtain the same effect we would need a dose of $9^{59}$ mg/kg (which is insane).
-in ref [32] and [34] of the main paper, a dose of 25 mg/kg per day of Ibr is used, and results in >90\% inhibition of BTK. The $\mu_{ac}$ associated with this dose is $\mu_{ac} = 0.0043$ and the number of molecules per dose is $0.5 \times 1.4 \times 10^{18}$.
-In the files with the \texttt{\_e0} suffix, a term for the natural production of effector cells was addes. This term $c0 = 4.2 \ [cells/h]$ was derived from ref. [36] of main paper.
-\begin{itemize}
-	\item \texttt{Cyt\_low} = 200 mg / m$^2$ = 66.7 mg $\cdot$ 24h / kg = 2.8 mg $\cdot$ h / kg. \texttt{Cyt\_low} = 1.4 mg / mouse (24h infusion)
-	\item \texttt{Cyt\_high} = 2500 mg/m$^2$ = 833 mg $\cdot$ 3h / kg = 277 mg $\cdot$ h / kg 3h - 2 times a day \texttt{Cyt\_high} = 17.5 mg / mouse
-\end{itemize}
