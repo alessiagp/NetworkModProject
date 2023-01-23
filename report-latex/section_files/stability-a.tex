@@ -1,5 +1,5 @@
 \subsubsection{Stability when $d=0$, \textit{i.e. without treatment}}
-The (1)-(3) model depends on time in the chemotherapy levels. Since equilibra cannot explicitly depend on $t$ for each $t\in \mathbf{R}$, we can approximate $\sum_{m=0}^{N-1} d\delta(t - m\tau)$ using a uniform drug injection that takes the form $\frac{d}{\tau}$. 
+The (1)-(3) model depends on time in the chemotherapy levels. Since equilibra cannot explicitly depend on $t$ for each $t\in \mathbf{R}$, $\sum_{m=0}^{N-1} d\delta(t - m\tau)$ was approximated using a uniform drug injection that takes the form $\frac{d}{\tau}$. 
 The steady states are calculated by zeroing the gradient of the function, only non-negative equilibria are considered and all initial conditions are assumed to be positive.
 The absence of drug treatment has $d=0$ and $C^*=0$
 
@@ -19,7 +19,7 @@ By applying the conditions for no treatment, the system becomes
 		0 = \cancelto{0}{\frac{d}{\tau}} - \cancelto{0}{\mu_CC} - \cancelto{0}{\frac{\mu_{CA} CA}{a+A}} & (A3) 
 	\end{cases} 
 \]
-From Equation (A2) we find that $E^*=0$, this cancels out the second term in Equation (A1),
+From Equation (A2) it is found that $E^*=0$, this cancels out the second term in Equation (A1),
 \[
 	\begin{cases}
 		rA \bigl( 1 - \frac{A}{K} \bigr) - \cancelto{0}{\mu_A AE} = 0 & (A1)\\ 
@@ -39,22 +39,22 @@ Equation (A1) is a second-degree equation in $A$, where the first solution is $A
 \[ -\mu_E(c+A) + pA - \mu_{EA}(c+A) = 0\]
 \[c\mu_E - (p -\mu_E - c\mu_{EA})\cdot A + \mu_{EA}\cdot A^2 = 0\]
 The result is a second-degree equation, to find the solutions the usual discriminant formula can be employed. It is found that $A^*_3 < 0$, which has no biological relevance, and $A^*_4 = A^*_1 = 0$.\\
-In conclusion, we have two equilibrium points: 
+In conclusion, there are two equilibrium points: 
 \[Eq_0^* = \{A^* = 0, E^* = 0, C^* = 0\}\]
 \[Eq_1^* = \{A^* = K, E^* = 0, C^* = 0\}\]
 
-To study the stability of the equilibria of system (A1)-(A3), we need to compute the eigenvalues $\lambda = [\lambda_1,\lambda_2,\lambda_3]$ of the Jacobian matrix $J$
+To study the stability of the equilibria of system (A1)-(A3), the eigenvalues $\lambda = [\lambda_1,\lambda_2,\lambda_3]$ of the Jacobian matrix $J$ are required:
 \[ \mathbf{J} = \begin{bmatrix} \frac{\partial A1}{\partial A} & \frac{\partial A1}{\partial E} & \frac{\partial A1}{\partial C} \\ \\
 \frac{\partial A2}{\partial A} & \frac{\partial A2}{\partial E} & \frac{\partial A2}{\partial C}\\ \\
 \frac{\partial A3}{\partial A} & \frac{\partial A3}{\partial E} & \frac{\partial A3}{\partial C} \end{bmatrix} \]
 
-For $Eq_0^*$ we obtain
+For $Eq_0^*$ it is obtained
 
 \[ J = \begin{pmatrix} r&0&0 \\ 0&-\mu_E&0 \\ 0&0&-\mu_C \end{pmatrix} \]
 
 that has eigenvalues $\lambda = [0.01,-4\times 10^{-5},-0.231]$ for Cyt and $\lambda = [0.01,-4\times 10^{-5},-0.116]$. For the equilibrium to be stable, all the (real parts) of the eigenvalues must be negative. So $Eq_0^*$ is NOT asymptotically stable.\\
 
-For $Eq_1^*$ we have
+For $Eq_1^*$ it is obtained
 
 \[ J = \begin{pmatrix} -r & -\mu_{AE}K & -\frac{\mu_{AC}K}{a} \\ 0 & -\mu_E + \frac{pK}{c+K} - \mu_{EA}K \\ 0&0& -\mu_C - \frac{\mu_{CA}K}{a+K} \end{pmatrix} \]
 
