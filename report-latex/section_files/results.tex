@@ -4,7 +4,7 @@ $$ G.I. = 1 - \frac{A_t}{A_{nt}} $$
 Where $A_t$ is the number of cancer cells in the treated group 28 hours after the end of the treatment and $A_{nt}$ is the number of cancer cells in the control at the same time. The values we obtained are reportes in Table \ref{tab:gi}, alongside the values reported in the main pater.
 
 \begin{table}[]
-\begin{tabular}{|c|c|l|l|}
+\begin{tabular}{|c|c|c|c|}
 \hline
 	Group & \begin{tabular}[c]{@{}c@{}}Growth \\ Inhibition (\%)\end{tabular} & GI (paper) & GI (exp) \\ \hline
 Cyt low           & 11 & 10.0 & 9.0    \\ \hline
@@ -19,7 +19,50 @@ Cyt infusion high & 98 & -    & -    \\ \hline
 \label{tab:gi}
 \end{table}
 
-The discrepancy in the growth inhibition for the Cyt high group, that was calculated at the time-point corresponding to two days after the end of the treatments, is probably due to some inconsistencies in the main paper, in which it is not clear when such value was calculated.\\
+The discrepancy in the growth inhibition for the Cyt high group, that was calculated at the time-point corresponding to two days after the end of the treatments, is probably due to some inconsistencies in the main paper, in which it is not clear when such value was calculated.
+
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[scale = 0.45]{1-Cyt_high_2m.png}
+    \caption{Simulation of the model with a high Cyt dose regimen}
+    \label{fig:cyt-high}
+\end{figure}
+
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[scale = 0.45] {2-Cyt_low_2m.png}
+    \caption{Simulation of the model with a low Cyt dose regimen}
+    \label{fig:cyt-low}
+\end{figure}
+
+\begin{figure}[htbp!]
+    \centering
+    \includegraphics[scale = 0.45] {3-Ibr_high_2m.png}
+    \caption{Simulation of the model with a high Ibr dose regimen}
+    \label{fig:ibr-high}
+\end{figure}
+
+\begin{figure} [htbp!]
+    \centering
+    \includegraphics[scale = 0.45] {4-Ibr_low_2m.png}
+    \caption{Simulation of the model with a low Ibr dose regimen}
+    \label{fig:ibr-low}
+\end{figure}
+
+\begin{figure} [htbp!]
+    \centering
+    \includegraphics[scale = 0.45] {5-cyt_ibr.png}
+    \caption{Simulation of the model with the absence and the presence of the combination of the two drugs}
+    \label{fig:cyt-ibr}
+\end{figure}
+
+\begin{figure} [htbp!]
+    \centering
+    \includegraphics[scale = 0.35] {6-1e18drug.png}
+    \caption{Reproduction of the Figure A2 of the main paper}
+    \label{fig:1e18drug}
+\end{figure}
+
 The results of the simulations without treatments are identical to the ones reported (Figure A1 in the paper), and so is the growth inhibition due to the combined use of a low dose of Ibr and a high dose of Cyt for 8 days (figure 6 in the paper). However, there is a mismatch in what was obtained from this project in trying to reporuce figure A2 and the figure itself. 
 In particular, the most striking difference is that the tumor-free period we obtained after the 30 days of combined treatment is much shorter.\\
 Regarding the adaptation of a treatment protocol involving the delivery of Cyt through infusion, we took as reference the paper \cite{cyt-3}, in which Cyt is used to treat acute myeloid leukemia in humans. Doses where adjusted according to standard guidelines \cite{dose-conversion} in order to pass from humans to mice. 
