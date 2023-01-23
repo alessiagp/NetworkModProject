@@ -55,7 +55,9 @@ b = 5e6;    % Drug amount producing 50% max effect on healty cells [molecules]
 mu_ea = 4e-15; % A20-effectors interaction coefficient [h^-1]
 mu_e = 4e-5; % Death rate of effecors [h^-1]
 
-e0 = 4.2; % Natural production of effector cells [cells/h]
+
+e0 = 0; % Natural production of effector cells [cells/h]
+%e0 = 4.2;
 tau = 24;
 
 A = r*X(1)*(1-(X(1)/K)) - mu_a*X(1)*X(2) - ((mu_ac*X(1)*X(3))/(a+X(3)));
