@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.15)  23 JAN 2023 12:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.15)  23 JAN 2023 12:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1148,12 +1148,12 @@ Package fancyhdr Warning: \headheight is too small (11.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-9.96901pt}.
 
 [4]
-<./Figures//conc.png, id=148, 466.74374pt x 424.58624pt>
+<./Figures//conc.png, id=147, 466.74374pt x 424.58624pt>
 File: ./Figures//conc.png Graphic file (type png)
 <use ./Figures//conc.png>
 Package pdftex.def Info: ./Figures//conc.png  used on input line 24.
 (pdftex.def)             Requested size: 84.01024pt x 76.42223pt.
-<./Figures//inhibition.png, id=149, 546.04pt x 419.5675pt>
+<./Figures//inhibition.png, id=148, 546.04pt x 419.5675pt>
 File: ./Figures//inhibition.png Graphic file (type png)
 <use ./Figures//inhibition.png>
 Package pdftex.def Info: ./Figures//inhibition.png  used on input line 28.
@@ -1168,7 +1168,7 @@ Overfull \hbox (2.82245pt too wide) in paragraph at lines 22--30
  [] 
  []
 
-<./Figures//4.png, id=152, 1234.6125pt x 697.60625pt>
+<./Figures//4.png, id=151, 1234.6125pt x 697.60625pt>
 File: ./Figures//4.png Graphic file (type png)
 <use ./Figures//4.png>
 Package pdftex.def Info: ./Figures//4.png  used on input line 37.
@@ -1178,7 +1178,7 @@ Overfull \hbox (4.50067pt too wide) in paragraph at lines 37--38
  [][] 
  []
 
-<./Figures//table.png, id=153, 861.2175pt x 171.64125pt>
+<./Figures//table.png, id=152, 861.2175pt x 171.64125pt>
 File: ./Figures//table.png Graphic file (type png)
 <use ./Figures//table.png>
 Package pdftex.def Info: ./Figures//table.png  used on input line 50.
@@ -1194,7 +1194,7 @@ Package fancyhdr Warning: \headheight is too small (11.0pt):
 
 [5 <./Figures//conc.png> <./Figures//inhibition.png> <./Figures//4.png> <./Figu
 res//table.png>]
-<./Figures//combined.png, id=172, 922.44624pt x 544.0325pt>
+<./Figures//combined.png, id=171, 922.44624pt x 544.0325pt>
 File: ./Figures//combined.png Graphic file (type png)
 <use ./Figures//combined.png>
 Package pdftex.def Info: ./Figures//combined.png  used on input line 4.
@@ -1230,65 +1230,74 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 44.
 ) (./section_files/results.tex
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 6.
+               Default added (so using `tbp') on input line 5.
 
 
-Overfull \hbox (8.45091pt too wide) in paragraph at lines 7--18
+Overfull \hbox (8.45091pt too wide) in paragraph at lines 6--17
 [][] 
  []
 
 <./Figures//1-Cyt_high_2m.png, id=188, 578.16pt x 361.35pt>
 File: ./Figures//1-Cyt_high_2m.png Graphic file (type png)
 <use ./Figures//1-Cyt_high_2m.png>
-Package pdftex.def Info: ./Figures//1-Cyt_high_2m.png  used on input line 26.
+Package pdftex.def Info: ./Figures//1-Cyt_high_2m.png  used on input line 25.
 (pdftex.def)             Requested size: 260.16959pt x 162.60599pt.
 
-Overfull \hbox (17.75214pt too wide) in paragraph at lines 26--27
+Overfull \hbox (17.75214pt too wide) in paragraph at lines 25--26
  [][] 
  []
 
 <./Figures//2-Cyt_low_2m.png, id=189, 578.16pt x 361.35pt>
 File: ./Figures//2-Cyt_low_2m.png Graphic file (type png)
 <use ./Figures//2-Cyt_low_2m.png>
-Package pdftex.def Info: ./Figures//2-Cyt_low_2m.png  used on input line 33.
+Package pdftex.def Info: ./Figures//2-Cyt_low_2m.png  used on input line 32.
 (pdftex.def)             Requested size: 260.16959pt x 162.60599pt.
 
-Overfull \hbox (17.75214pt too wide) in paragraph at lines 33--34
+Overfull \hbox (17.75214pt too wide) in paragraph at lines 32--33
  [][] 
  []
 
 <./Figures//3-Ibr_high_2m.png, id=190, 578.16pt x 361.35pt>
 File: ./Figures//3-Ibr_high_2m.png Graphic file (type png)
 <use ./Figures//3-Ibr_high_2m.png>
-Package pdftex.def Info: ./Figures//3-Ibr_high_2m.png  used on input line 40.
+Package pdftex.def Info: ./Figures//3-Ibr_high_2m.png  used on input line 39.
 (pdftex.def)             Requested size: 260.16959pt x 162.60599pt.
 
-Overfull \hbox (17.75214pt too wide) in paragraph at lines 40--41
+Overfull \hbox (17.75214pt too wide) in paragraph at lines 39--40
  [][] 
  []
 
 <./Figures//4-Ibr_low_2m.png, id=191, 578.16pt x 361.35pt>
 File: ./Figures//4-Ibr_low_2m.png Graphic file (type png)
 <use ./Figures//4-Ibr_low_2m.png>
-Package pdftex.def Info: ./Figures//4-Ibr_low_2m.png  used on input line 47.
+Package pdftex.def Info: ./Figures//4-Ibr_low_2m.png  used on input line 46.
 (pdftex.def)             Requested size: 260.16959pt x 162.60599pt.
 
-Overfull \hbox (17.75214pt too wide) in paragraph at lines 47--48
+Overfull \hbox (17.75214pt too wide) in paragraph at lines 46--47
  [][] 
  []
 
-<./Figures//5-cyt_ibr.png, id=192, 433.62pt x 361.35pt>
+
+Package fancyhdr Warning: \headheight is too small (11.0pt): 
+(fancyhdr)                Make it at least 20.96901pt, for example:
+(fancyhdr)                \setlength{\headheight}{20.96901pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-9.96901pt}.
+
+[7 <./Figures//1-Cyt_high_2m.png>]
+<./Figures//5-cyt_ibr.png, id=204, 433.62pt x 361.35pt>
 File: ./Figures//5-cyt_ibr.png Graphic file (type png)
 <use ./Figures//5-cyt_ibr.png>
-Package pdftex.def Info: ./Figures//5-cyt_ibr.png  used on input line 54.
+Package pdftex.def Info: ./Figures//5-cyt_ibr.png  used on input line 55.
 (pdftex.def)             Requested size: 195.1272pt x 162.60599pt.
-<./Figures//6-1e18drug.png, id=193, 867.24pt x 289.08pt>
+<./Figures//6-1e18drug.png, id=205, 867.24pt x 289.08pt>
 File: ./Figures//6-1e18drug.png Graphic file (type png)
 <use ./Figures//6-1e18drug.png>
-Package pdftex.def Info: ./Figures//6-1e18drug.png  used on input line 61.
+Package pdftex.def Info: ./Figures//6-1e18drug.png  used on input line 62.
 (pdftex.def)             Requested size: 303.53854pt x 101.1795pt.
 
-Overfull \hbox (61.1211pt too wide) in paragraph at lines 61--62
+Overfull \hbox (61.1211pt too wide) in paragraph at lines 62--63
  [][] 
  []
 
@@ -1301,17 +1310,9 @@ Package fancyhdr Warning: \headheight is too small (11.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-9.96901pt}.
 
-[7 <./Figures//1-Cyt_high_2m.png>] (./section_files/conclusions.tex)
-
-Package fancyhdr Warning: \headheight is too small (11.0pt): 
-(fancyhdr)                Make it at least 20.96901pt, for example:
-(fancyhdr)                \setlength{\headheight}{20.96901pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-9.96901pt}.
-
 [8 <./Figures//2-Cyt_low_2m.png> <./Figures//3-Ibr_high_2m.png> <./Figures//4-I
 br_low_2m.png> <./Figures//5-cyt_ibr.png> <./Figures//6-1e18drug.png>]
+(./section_files/conclusions.tex)
 Overfull \hbox (76.3755pt too wide) in paragraph at lines 155--155
 \OT1/ptm/m/it/10 (-20) tory, [][]$\OT1/pcr/m/n/10 https : / / github . com / al
 essiagp / NetworkModProject$[][]\OT1/ptm/m/n/10 (-20) .
@@ -1337,7 +1338,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  26391 strings out of 478268
  457648 string characters out of 5846346
- 1326413 words of memory out of 5000000
+ 1325528 words of memory out of 5000000
  43729 multiletter control sequences out of 15000+600000
  549355 words of font info for 391 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1359,10 +1360,10 @@ b></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/lo
 cal/texlive/2022/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texli
 ve/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/te
 xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (9 pages, 828414 bytes).
+Output written on main.pdf (9 pages, 829438 bytes).
 PDF statistics:
- 318 PDF objects out of 1000 (max. 8388607)
- 244 compressed objects within 3 object streams
+ 323 PDF objects out of 1000 (max. 8388607)
+ 249 compressed objects within 3 object streams
  60 named destinations out of 1000 (max. 500000)
  103642 words of extra memory for PDF output out of 106986 (max. 10000000)
 
