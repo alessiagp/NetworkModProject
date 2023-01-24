@@ -22,7 +22,7 @@ K = 4e6;    % Max A20 number [cells/mouse]
 
 %%% Cytotoxicity rate with drug [h^−1]
 
-mu_ac1 = 0.0015; % Cyt 200 mg * 24h / m^2, 7 days od infusion
+mu_ac1 = 0.0015; % Cyt 200 mg * 24h / m^2, 7 days of infusion
 mu_ac2 = 0.021; % Cyt 1000 mg * 3h / m^2, 6 days with 3h long infusions every 12h
 
 mu_ca1 = mu_ac1 * 10; % Deactivation of drug due to killing of A20 [h^-1]
