@@ -27,7 +27,6 @@ K = 4e6;    % Max A20 number [cells/mouse]
 %mu_ac = 0.0041; % Ibr 9 mg/kg on days 1-5 and 8-10
 %mu_ac = 0.0042; % Ibr 18 mg/kg on days 1-5 and 8-10
 mu_ac = 0.0161; % Cyt 62.5 + Ibr 9 mg/kg days 1-5 and 8-10
-%mu_ac = 0.0043; % Ibr 25 mg/kg on days 1-5 and 8-10
 
 mu_ca = mu_ac * 10; % Deactivation of drug due to killing of A20 [h^-1]
 
@@ -35,16 +34,15 @@ mu_ca = mu_ac * 10; % Deactivation of drug due to killing of A20 [h^-1]
 
 %d = 1.25 * 2.4e18; % Cyt 62.5 mg/kg
 %d = 2.4e-3 * 2.4e18; % Cyt 0.12 md/kg
-d = 0.18 * 1.4e18; % Ibr 9 mg/kg
+%d = 0.18 * 1.4e18; % Ibr 9 mg/kg
 %d = 0.36 * 1.4e18; % Ibr 18 mg/kg
-%d = 1.25 * 2.4e18 + 0.18 * 1.4e18; %Cyt 62.5 + Ibr 9
-%d = 0.5 * 1.4e18; % Ibr 25 mg/kg
+d = 1.25 * 2.4e18 + 0.18 * 1.4e18; %Cyt 62.5 + Ibr 9
 
 %%% Chemical deactivation rate [h^-1]
 
 %mu_c = 0.231; % Cyt
-mu_c = 0.116; % Ibr
-%mu_c = 0.221; % Cyt 62.5 + Ibr 9
+%mu_c = 0.116; % Ibr
+mu_c = 0.221; % Cyt 62.5 + Ibr 9
 
 mu_a = 2e-12;   % Effectors-A20 interaction coefficient [h^-1]
 a = 2e3;    % Drug amount producing 50% of max effect on A20 [molecules]
