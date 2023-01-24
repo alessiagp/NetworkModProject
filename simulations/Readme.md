@@ -11,8 +11,8 @@ This folder contains the scripts used to run the simulation of our ODE system an
 
 These were taken directly from the paper. Additionally we simulated the following conditions
 
-- Ibr_25: Ibr 25 mg/kg days 1-5 and 8-10
-- ??
+- Cyt_infusion_low
+- Cyt_infusion_high
 
 The folder *figures* contains the plots of the CSV files obtained using the script *plotter.py* found in the main folder.
 
