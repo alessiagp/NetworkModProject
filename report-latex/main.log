@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.15)  23 JAN 2023 20:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.15)  24 JAN 2023 18:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1065,13 +1065,13 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 
 ]
-Overfull \hbox (1.78638pt too wide) in paragraph at lines 17--18
+Overfull \hbox (1.78638pt too wide) in paragraph at lines 18--19
 \OT1/ptm/m/n/10 (-20) over 2 months, or lym-pho-cyte dou-bling time $\OMS/ztmcm
 /m/n/10 ^^T \OT1/ztmcm/m/n/10 6$ \OT1/ptm/m/n/10 (-20) months. 
  []
 
 
-Overfull \hbox (5.96193pt too wide) in paragraph at lines 20--21
+Overfull \hbox (5.96193pt too wide) in paragraph at lines 21--22
 []\OT1/ptm/m/n/10 (-20) Massive or symp-tomatic splenomegaly and hep-atomegaly 
 
  []
@@ -1097,7 +1097,7 @@ Package fancyhdr Warning: \headheight is too small (11.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-9.96901pt}.
 
 [2 <./Figures//Ibrutinib.png>]
-<./Figures//Cytarabin.png, id=125, 1284.8pt x 1403.2425pt>
+<./Figures//Cytarabin.png, id=126, 1284.8pt x 1403.2425pt>
 File: ./Figures//Cytarabin.png Graphic file (type png)
 <use ./Figures//Cytarabin.png>
 Package pdftex.def Info: ./Figures//Cytarabin.png  used on input line 27.
@@ -1114,6 +1114,10 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 Package fancyhdr Warning: \headheight is too small (11.0pt): 
@@ -1142,12 +1146,12 @@ Package fancyhdr Warning: \headheight is too small (11.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-9.96901pt}.
 
 [4]
-<./Figures//conc.png, id=148, 466.74374pt x 424.58624pt>
+<./Figures//conc.png, id=149, 466.74374pt x 424.58624pt>
 File: ./Figures//conc.png Graphic file (type png)
 <use ./Figures//conc.png>
 Package pdftex.def Info: ./Figures//conc.png  used on input line 24.
 (pdftex.def)             Requested size: 84.01024pt x 76.42223pt.
-<./Figures//inhibition.png, id=149, 546.04pt x 419.5675pt>
+<./Figures//inhibition.png, id=150, 546.04pt x 419.5675pt>
 File: ./Figures//inhibition.png Graphic file (type png)
 <use ./Figures//inhibition.png>
 Package pdftex.def Info: ./Figures//inhibition.png  used on input line 28.
@@ -1162,7 +1166,7 @@ Overfull \hbox (2.82245pt too wide) in paragraph at lines 22--30
  [] 
  []
 
-<./Figures//4.png, id=152, 1234.6125pt x 697.60625pt>
+<./Figures//4.png, id=153, 1234.6125pt x 697.60625pt>
 File: ./Figures//4.png Graphic file (type png)
 <use ./Figures//4.png>
 Package pdftex.def Info: ./Figures//4.png  used on input line 37.
@@ -1172,7 +1176,7 @@ Overfull \hbox (4.50067pt too wide) in paragraph at lines 37--38
  [][] 
  []
 
-<./Figures//table.png, id=153, 861.2175pt x 171.64125pt>
+<./Figures//table.png, id=154, 861.2175pt x 171.64125pt>
 File: ./Figures//table.png Graphic file (type png)
 <use ./Figures//table.png>
 Package pdftex.def Info: ./Figures//table.png  used on input line 50.
@@ -1210,6 +1214,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 21--27
+
+ []
+
+
 Package fancyhdr Warning: \headheight is too small (11.0pt): 
 (fancyhdr)                Make it at least 20.96901pt, for example:
 (fancyhdr)                \setlength{\headheight}{20.96901pt}.
@@ -1219,7 +1228,7 @@ Package fancyhdr Warning: \headheight is too small (11.0pt):
 
 [6 <./Figures//combined.png>]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 44.
+LaTeX Font Warning: Command \small invalid in math mode on input line 39.
 
 ) (./section_files/results.tex
 
@@ -1231,7 +1240,7 @@ Overfull \hbox (8.45091pt too wide) in paragraph at lines 6--17
 [][] 
  []
 
-<./Figures//1-Cyt_high_2m.png, id=188, 578.16pt x 361.35pt>
+<./Figures//1-Cyt_high_2m.png, id=187, 578.16pt x 361.35pt>
 File: ./Figures//1-Cyt_high_2m.png Graphic file (type png)
 <use ./Figures//1-Cyt_high_2m.png>
 Package pdftex.def Info: ./Figures//1-Cyt_high_2m.png  used on input line 25.
@@ -1241,7 +1250,7 @@ Overfull \hbox (17.75214pt too wide) in paragraph at lines 25--26
  [][] 
  []
 
-<./Figures//2-Cyt_low_2m.png, id=189, 578.16pt x 361.35pt>
+<./Figures//2-Cyt_low_2m.png, id=188, 578.16pt x 361.35pt>
 File: ./Figures//2-Cyt_low_2m.png Graphic file (type png)
 <use ./Figures//2-Cyt_low_2m.png>
 Package pdftex.def Info: ./Figures//2-Cyt_low_2m.png  used on input line 32.
@@ -1251,7 +1260,7 @@ Overfull \hbox (17.75214pt too wide) in paragraph at lines 32--33
  [][] 
  []
 
-<./Figures//3-Ibr_high_2m.png, id=190, 578.16pt x 361.35pt>
+<./Figures//3-Ibr_high_2m.png, id=189, 578.16pt x 361.35pt>
 File: ./Figures//3-Ibr_high_2m.png Graphic file (type png)
 <use ./Figures//3-Ibr_high_2m.png>
 Package pdftex.def Info: ./Figures//3-Ibr_high_2m.png  used on input line 39.
@@ -1261,7 +1270,7 @@ Overfull \hbox (17.75214pt too wide) in paragraph at lines 39--40
  [][] 
  []
 
-<./Figures//4-Ibr_low_2m.png, id=191, 578.16pt x 361.35pt>
+<./Figures//4-Ibr_low_2m.png, id=190, 578.16pt x 361.35pt>
 File: ./Figures//4-Ibr_low_2m.png Graphic file (type png)
 <use ./Figures//4-Ibr_low_2m.png>
 Package pdftex.def Info: ./Figures//4-Ibr_low_2m.png  used on input line 46.
@@ -1271,12 +1280,21 @@ Overfull \hbox (17.75214pt too wide) in paragraph at lines 46--47
  [][] 
  []
 
-<./Figures//5-cyt_ibr.png, id=193, 433.62pt x 361.35pt>
+
+Package fancyhdr Warning: \headheight is too small (11.0pt): 
+(fancyhdr)                Make it at least 20.96901pt, for example:
+(fancyhdr)                \setlength{\headheight}{20.96901pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-9.96901pt}.
+
+[7 <./Figures//1-Cyt_high_2m.png> <./Figures//2-Cyt_low_2m.png>]
+<./Figures//5-cyt_ibr.png, id=205, 433.62pt x 361.35pt>
 File: ./Figures//5-cyt_ibr.png Graphic file (type png)
 <use ./Figures//5-cyt_ibr.png>
 Package pdftex.def Info: ./Figures//5-cyt_ibr.png  used on input line 55.
 (pdftex.def)             Requested size: 195.1272pt x 162.60599pt.
-<./Figures//6-1e18drug.png, id=194, 867.24pt x 289.08pt>
+<./Figures//6-1e18drug.png, id=206, 867.24pt x 289.08pt>
 File: ./Figures//6-1e18drug.png Graphic file (type png)
 <use ./Figures//6-1e18drug.png>
 Package pdftex.def Info: ./Figures//6-1e18drug.png  used on input line 62.
@@ -1286,7 +1304,7 @@ Overfull \hbox (61.1211pt too wide) in paragraph at lines 62--63
  [][] 
  []
 
-)
+) (./section_files/conclusions.tex)
 
 Package fancyhdr Warning: \headheight is too small (11.0pt): 
 (fancyhdr)                Make it at least 20.96901pt, for example:
@@ -1295,18 +1313,9 @@ Package fancyhdr Warning: \headheight is too small (11.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-9.96901pt}.
 
-[7 <./Figures//1-Cyt_high_2m.png>] (./section_files/conclusions.tex)
-
-Package fancyhdr Warning: \headheight is too small (11.0pt): 
-(fancyhdr)                Make it at least 20.96901pt, for example:
-(fancyhdr)                \setlength{\headheight}{20.96901pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-9.96901pt}.
-
-[8 <./Figures//2-Cyt_low_2m.png> <./Figures//3-Ibr_high_2m.png> <./Figures//4-I
-br_low_2m.png> <./Figures//5-cyt_ibr.png> <./Figures//6-1e18drug.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[8 <./Figures//3-Ibr_high_2m.png> <./Figures//4-Ibr_low_2m.png> <./Figures//5-c
+yt_ibr.png> <./Figures//6-1e18drug.png>]
+Underfull \vbox (badness 3838) has occurred while \output is active []
 
 
 Overfull \hbox (76.3755pt too wide) in paragraph at lines 155--155
@@ -1315,6 +1324,14 @@ essiagp / NetworkModProject$[][]\OT1/ptm/m/n/10 (-20) .
  []
 
 
+Package fancyhdr Warning: \headheight is too small (11.0pt): 
+(fancyhdr)                Make it at least 20.96901pt, for example:
+(fancyhdr)                \setlength{\headheight}{20.96901pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-9.96901pt}.
+
+[9] 
 AED: lastpage setting LastPage
 
 Package fancyhdr Warning: \headheight is too small (11.0pt): 
@@ -1324,21 +1341,23 @@ Package fancyhdr Warning: \headheight is too small (11.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-9.96901pt}.
 
-[9] (./main.aux)
+[10
+
+] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9FA642D9A177DDDB289E7BAC6D0E58E8;2842.
+(rerunfilecheck)             Checksum: 69CE285F7F8374A9D2A9257C79009B35;2819.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26387 strings out of 478268
- 457609 string characters out of 5846346
- 1326529 words of memory out of 5000000
+ 26384 strings out of 478268
+ 457574 string characters out of 5846346
+ 1326510 words of memory out of 5000000
  43729 multiletter control sequences out of 15000+600000
- 549176 words of font info for 388 fonts, out of 8000000 for 9000
+ 548812 words of font info for 386 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,19n,77p,1530b,1763s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 70i,19n,77p,1470b,1763s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -1356,10 +1375,10 @@ b></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/lo
 cal/texlive/2022/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texli
 ve/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/te
 xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (9 pages, 831205 bytes).
+Output written on main.pdf (10 pages, 825980 bytes).
 PDF statistics:
- 324 PDF objects out of 1000 (max. 8388607)
- 250 compressed objects within 3 object streams
- 60 named destinations out of 1000 (max. 500000)
+ 329 PDF objects out of 1000 (max. 8388607)
+ 254 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 500000)
  103642 words of extra memory for PDF output out of 106986 (max. 10000000)
 
